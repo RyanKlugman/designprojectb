@@ -14,27 +14,27 @@ void Upsample(unsigned char *input, int &img_size, int steps);
 
 //Quantizes the pixel values according to (amount) and scales them so they are all
 //between 0 - 255
-unsigned char *Quantize(double *input, int img_size, int amount, wlt_header_info &wlt);
+unsigned char *Quantize(float *input, int img_size, int amount, wlt_header_info &wlt);
 
 //Rescales the coefficients to their original values after Quantize(...)
-void Rescale(double *input, int img_size, wlt_header_info wlt);
+void Rescale(float *input, int img_size, wlt_header_info wlt);
 
 //Converts from rgb -> yuv colourspace
-void ToYUV(double *input, int img_size);
+void ToYUV(float *input, int img_size);
 
 //Converts from yuv -> rgb colourspace
-void ToRGB(double *input, int img_size);
+void ToRGB(float *input, int img_size);
 
 //These three functions together perform a Daubechies 9/7 transform
 //Transform97() is the controlling function
-void Transform97(double *input, int img_size);
-void TransformStream(double *input, int img_size);
-void Step97(double *input, int img_size);
+void Transform97(float *input, int img_size);
+void TransformStream(float *input, int img_size);
+void Step97(float *input, int img_size);
 
 //These three functions together perform a Daubechies 9/7 inverse transform
 //Inverse97() is the controlling function
-void Inverse97(double *input, int img_size, int steps);
-void InverseStream(double *input, int img_size, int steps);
-void InvStep97(double* input, int img_size);
+void Inverse97(float *input, int img_size, int steps);
+void InverseStream(float *input, int img_size, int steps);
+void InvStep97(float* input, int img_size);
 
 #endif

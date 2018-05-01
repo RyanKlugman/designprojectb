@@ -176,7 +176,7 @@ void Upsample(unsigned char *input, int &img_size, int steps)
 //Then, quantizes the pixel values according to the value of amount; ie: reduces the number
 //of colours. This leads to better Huffman encoding, so there is a tradeoff between quality
 //and compression. Values between 1 and 8 work well for most images.
-unsigned char *Quantize(double *input, int img_size, int amount, wlt_header_info &wlt)
+unsigned char *Quantize(float *input, int img_size, int amount, wlt_header_info &wlt)
 {
 	if(amount > 64) amount = 64;
 	unsigned char *q = new unsigned char[img_size];
@@ -184,7 +184,7 @@ unsigned char *Quantize(double *input, int img_size, int amount, wlt_header_info
 
 	//first we need to adjust all coefficients to make sure they are between 0 - 255
 	//we will scale them according to the maximum value and then center them around 128
-	double max=0;
+	float max=0;
 	int do_scale = 0;
 	for(i=0; i<img_size; i++)
 	{
@@ -194,7 +194,7 @@ unsigned char *Quantize(double *input, int img_size, int amount, wlt_header_info
 		if(abs > max) max = abs;
 	}
 	if(max > 255) do_scale = 1;
-	double scale = max / 128;
+	float scale = max / 128;
 	wlt.scale = scale; //we will need this value on decompression
 
 	for(i=0; i<img_size; i++)
@@ -214,7 +214,7 @@ unsigned char *Quantize(double *input, int img_size, int amount, wlt_header_info
 
 
 //Rescales all coefficients to their original value after Quantize(...)
-void Rescale(double *input, int img_size, wlt_header_info wlt)
+void Rescale(float *input, int img_size, wlt_header_info wlt)
 {
 	for(int i=0; i<img_size; i++)
 	{
@@ -224,13 +224,13 @@ void Rescale(double *input, int img_size, wlt_header_info wlt)
 
 
 //Convert from RGB to YUV, where img_size is the size of the input in bytes.
-void ToYUV(double *input,int img_size)
+void ToYUV(float *input,int img_size)
 {
 	//Transorm defined as:
 	//|Y| = |1/4    1/2     1/4| |R|
 	//|U| = |1      -1      0  | |G|
 	//|V| = |0      -1      1  | |B|
-	double *output = new double[img_size];
+	float *output = new float[img_size];
 	int i;
 	pixel rgb;
 
@@ -250,13 +250,13 @@ void ToYUV(double *input,int img_size)
 
 
 //Convert from YUV to RGB, where img_size is the size of the input in bytes.
-void ToRGB(double *input,int img_size)
+void ToRGB(float *input,int img_size)
 {
 	//Transform defined as:
 	//|R| = |1      3/4    -1/4| |Y|
 	//|G| = |1     -1/4    -1/4| |U|
 	//|B| = |1     -1/4     3/4| |V|
-	double *output = new double[img_size];
+	float *output = new float[img_size];
 	int i;
 	pixel yuv;
 
@@ -277,15 +277,15 @@ void ToRGB(double *input,int img_size)
 
 //Performs a Daubechies 9/7 wavelet transform on the input image, where img_size is
 //the size of the input in bytes.
-void Transform97(double *input, int img_size)
+void Transform97(float *input, int img_size)
 {
 	//w is the length of one side in pixels
 	int w = sqrt((float)(img_size/3));	
 	int row_length = 3 * w;
 	int i, j, a;
-	double *Red = new double[img_size/3];
-	double *Green = new double[img_size/3];
-	double *Blue = new double[img_size/3];
+	float *Red = new float[img_size/3];
+	float *Green = new float[img_size/3];
+	float *Blue = new float[img_size/3];
 
 	//split image data into red, blue, green streams
 	for(i=0; i<w; i++)
@@ -322,7 +322,7 @@ void Transform97(double *input, int img_size)
 }
 
 //Transforms a single channel (red, blue, green) of the image
-void TransformStream(double *input, int img_size)
+void TransformStream(float *input, int img_size)
 {
 	int w = sqrt((float)(img_size));
 	//set a limit on how small the smallest subimage can be
@@ -330,7 +330,7 @@ void TransformStream(double *input, int img_size)
 	if(w == MIN_SUBI) return;
 	int i, j;
 	//temp array for the transform
-	double *vector = new double[w];
+	float *vector = new float[w];
 
 	//apply transform to rows
 	for(i=0; i<w; i++)
@@ -365,7 +365,7 @@ void TransformStream(double *input, int img_size)
 		}
 	}
 	//copy top-left subimage into a new array and repeat
-	double *subimage = new double[img_size/4];
+	float *subimage = new float[img_size/4];
 	for(i=0; i<w/2; i++)
 	{
 		for(j=0; j<w/2; j++)
@@ -388,9 +388,9 @@ void TransformStream(double *input, int img_size)
 
 //Applies the filters to the input (as a 1-d array). Used on one row or column
 //of image data at a time. Taken from a sample algorithm at http://www.ebi.ac.uk/~gpau/misc/dwt97.c
-void Step97(double* input, int img_size)
+void Step97(float* input, int img_size)
 {
-	double a;
+	float a;
 	int i;
 
 	// Predict 1
@@ -434,7 +434,7 @@ void Step97(double* input, int img_size)
 	}
 
 	// Pack
-	double *temp = new double[img_size];
+	float *temp = new float[img_size];
 	for (i=0;i<img_size;i++)
 	{
 		if (i%2==0) temp[i/2]=input[i];
@@ -445,14 +445,14 @@ void Step97(double* input, int img_size)
 }
 
 //Performs a Daubechies 9/7 Inverse transfom
-void Inverse97(double *input, int img_size, int steps)
+void Inverse97(float *input, int img_size, int steps)
 {
 	int w = sqrt((float)(img_size/3));
 	int row_length = 3 * w;
 	int i, j, a;
-	double *Red = new double[img_size/3];
-	double *Green = new double[img_size/3];
-	double *Blue = new double[img_size/3];
+	float *Red = new float[img_size/3];
+	float *Green = new float[img_size/3];
+	float *Blue = new float[img_size/3];
 
 	//split image data into red, blue, green streams
 	for(i=0; i<w; i++)
@@ -490,10 +490,10 @@ void Inverse97(double *input, int img_size, int steps)
 
 //Performs an Inverse on a single stream (red, blue, or green)
 //"steps" is the number of downsample steps performed during compression
-void InverseStream(double *input, int img_size, int steps)
+void InverseStream(float *input, int img_size, int steps)
 {
 	//w_orig is the length of one side of the original image in pixels
-	//w_sub should initially be double the length of one side of the smallest subimage
+	//w_sub should initially be float the length of one side of the smallest subimage
 	int w_sub = 2 * MIN_SUBI;// * pow((float)2, steps);
 	int w_orig = sqrt((float)(img_size));
 	int i, j;
@@ -504,8 +504,8 @@ void InverseStream(double *input, int img_size, int steps)
 	do
 	{
 		//temp array for the inverse
-		double *vector = new double[w_sub];
-		double *subimage = new double[w_sub*w_sub];
+		float *vector = new float[w_sub];
+		float *subimage = new float[w_sub*w_sub];
 
 		//get the top-left subimages to transform
 		for(i=0; i<w_sub; i++)
@@ -565,13 +565,13 @@ void InverseStream(double *input, int img_size, int steps)
 
 //Performs a filter inverse on a one-dimensional array. Use on a row or column of
 //image data. Taken from a sample algorithm at http://www.ebi.ac.uk/~gpau/misc/dwt97.c
-void InvStep97(double* input, int img_size)
+void InvStep97(float* input, int img_size)
 {
-	double a;
+	float a;
 	int i;
 
 	// Unpack
-	double *temp = new double[img_size];
+	float *temp = new float[img_size];
 	for (i=0;i<img_size/2;i++)
 	{
 		temp[i*2]=input[i];

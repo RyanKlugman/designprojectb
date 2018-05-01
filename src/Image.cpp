@@ -14,7 +14,7 @@ using namespace std;
 //Currently, the input BMP must be a square with sides = 2^n, (n>1), otherwise
 //the wavelet transform algorithms won't work.
 
-int LoadBMP(char *fname, unsigned char *&header_addr, int &header_size, double *&img_addr, int &img_size)
+int LoadBMP(char *fname, unsigned char *&header_addr, int &header_size, float *&img_addr, int &img_size)
 {
 
 	fstream file;
@@ -48,7 +48,7 @@ int LoadBMP(char *fname, unsigned char *&header_addr, int &header_size, double *
 	img_size = size-offset;
 
 	unsigned char *header_buf = new unsigned char[header_size];
-	double *img_buf = new double[img_size];
+	float *img_buf = new float[img_size];
 
 	memcpy(header_buf, mem, header_size);
 	for(int i=0; i<(img_size); i++) img_buf[i] = mem[offset + i];
@@ -66,7 +66,7 @@ int LoadBMP(char *fname, unsigned char *&header_addr, int &header_size, double *
 //fname = the file name to save as
 //header_data is a pointer to the bmp header data, and header_size is its size in bytes
 //img_data is a pointer to the image data, and img_size is its size in bytes
-int SaveBMP(char *fname, unsigned char *header_data, int header_size, double *img_data, int img_size)
+int SaveBMP(char *fname, unsigned char *header_data, int header_size, float *img_data, int img_size)
 {
 	//recombine the bmp file
 	int file_size = header_size + img_size;
@@ -135,7 +135,7 @@ int SaveWLT(char *fname, wlt_header_info wlt, unsigned char *bmp_header_data,
 	mem[11] = wlt.h_padding;
 
 	//bytes 12 - 19, scaling factor for transformed coefficients
-	memcpy(mem + 12, &wlt.scale, sizeof(double));
+	memcpy(mem + 12, &wlt.scale, sizeof(float));
 
 	//remaining header bytes, huffman freq table
 	int f_length = wlt.hsize - HEADER_SIZE;
@@ -205,7 +205,7 @@ int LoadWLT(char *fname, wlt_header_info &wlt, unsigned char *&bmp_header_addr, 
 	wlt.h_padding = mem[11];
 
 	//read bytes 12 - 19 to get scaling factor
-	memcpy(&wlt.scale, mem+12, sizeof(double));
+	memcpy(&wlt.scale, mem+12, sizeof(float));
 
 	//read remaining header bytes to get huffman freq table
 	int f_length = wlt.hsize - HEADER_SIZE;

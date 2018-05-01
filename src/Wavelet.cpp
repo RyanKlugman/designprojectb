@@ -7,7 +7,7 @@
 //quant = the quantization amount, see Operations.h for more info
 void Compress(char *fname, char *fname_c, int steps, int quant)
 {
-	double *img = NULL;
+	float *img = NULL;
 	unsigned char *header = NULL;
 	int sz_header = 0;
 	int sz_img = 0;
@@ -73,11 +73,11 @@ void Decompress(char *fname_c, char *fname)
 	//scale back up to original size
 	Upsample(img, sz_img, wlt.steps);
 
-	//put image data back into a double array before inversing to avoid rounding errors
-	double *img2 = new double[sz_img];
+	//put image data back into a float array before inversing to avoid rounding errors
+	float *img2 = new float[sz_img];
 	for(int i=0; i<sz_img; i++)
 	{
-		img2[i] = (double)img[i];
+		img2[i] = (float)img[i];
 	}
 	delete[] img;
 

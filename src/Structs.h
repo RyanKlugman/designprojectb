@@ -18,7 +18,7 @@ struct wlt_header_info
 	char steps;					//number of downsample steps (either 1 or 0)
 	int input_bytes;			//number of compressed image bytes
 	char h_padding;				//number of padding bits at the end of the encoded image data
-	double scale;				//the scaling value for the transformed coefficients
+	float scale;				//the scaling value for the transformed coefficients
 	string frequency;			//frequency table for huffman decoding
 								//format: "[value1] [freq1]/[value2] [freq2]/..."
 								//where any values (0 - 255) not listed are assumed
@@ -28,9 +28,9 @@ struct wlt_header_info
 //Just a pixel colour value
 struct pixel
 {
-	double red;
-	double blue;
-	double green;
+	float red;
+	float blue;
+	float green;
 };
 
 //A node for the Huffman tree
