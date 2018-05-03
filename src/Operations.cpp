@@ -2,6 +2,7 @@
 #include "Structs.h"
 #include <string.h>
 #include <math.h>
+#include "Wavelet.h"
 
 using namespace std;
 
@@ -178,38 +179,42 @@ void Upsample(unsigned char *input, int &img_size, int steps)
 //and compression. Values between 1 and 8 work well for most images.
 unsigned char *Quantize(float *input, int img_size, int amount, wlt_header_info &wlt)
 {
-	if(amount > 64) amount = 64;
+	if (amount > 64) amount = 64;
 	unsigned char *q = new unsigned char[img_size];
 	int i;
 
 	//first we need to adjust all coefficients to make sure they are between 0 - 255
 	//we will scale them according to the maximum value and then center them around 128
-	float max=0;
+	float max = 0;
 	int do_scale = 0;
-	for(i=0; i<img_size; i++)
+	for (i = 0; i < img_size; i++)
 	{
 		int abs;
-		if(input[i] < 0) abs = input[i] * (-1);
+		if (input[i] < 0) abs = input[i] * (-1);
 		else abs = input[i];
-		if(abs > max) max = abs;
+		if (abs > max) max = abs;
 	}
-	if(max > 255) do_scale = 1;
+	if (max > 255) do_scale = 1;
 	float scale = max / 128;
 	wlt.scale = scale; //we will need this value on decompression
+	Quantize2(input, img_size, amount, do_scale, scale, q);
+	return q;
+}
 
-	for(i=0; i<img_size; i++)
+void Quantize2(float *input, int img_size, int amount, int do_scale, int scale, unsigned char *q)
+{
+	for (int i = 0; i < img_size; i++)
 	{
 		//scale to between 0 - 255
-		if(do_scale == 1) input[i] = (input[i] / scale) + 128;
+		if (do_scale == 1) input[i] = (input[i] / scale) + 128;
 		//now, quantize the pixel values
 		input[i] = input[i] / amount;
-		input[i] = (int)(input[i]+0.5); //round up or down
+		input[i] = (int)(input[i] + 0.5); //round up or down
 		input[i] = input[i] * amount; //scale back up
-		if(input[i] > 255) input[i]=255;
-		if(input[i] < 0) input[i]=0;
+		if (input[i] > 255) input[i] = 255;
+		if (input[i] < 0) input[i] = 0;
 		q[i] = ((unsigned char)input[i]);
 	}
-	return q;
 }
 
 
@@ -333,57 +338,79 @@ void TransformStream(float *input, int img_size)
 	float *vector = new float[w];
 
 	//apply transform to rows
-	for(i=0; i<w; i++)
+	TransformStreamA(w, vector, input);
+	//now apply transform to the columns of our new array
+	TransformStreamB(w, vector, input);
+	//copy top-left subimage into a new array and repeat
+	float *subimage = new float[img_size/4];
+
+	TransformStream2(w, subimage, input);
+
+	TransformStream(subimage, img_size/4);
+
+	//copy new subimage back to top left corner
+
+	TransformStream3(w, subimage, input);
+
+	delete[] vector;
+}
+
+//apply transform to rows
+void TransformStreamA(int w, float *vector, float *input) {
+	for(int i=0; i<w; i++)
 	{
 		//get row
-		for(j=0; j<w; j++)
+		for(int j=0; j<w; j++)
 		{
 			vector[j] = input[i*w + j];
 		}
 		//apply transform
 		Step97(vector, w);
 		//copy back
-		for(j=0; j<w; j++)
+		for(int j=0; j<w; j++)
 		{
 			input[i*w + j] = vector[j];
 		}
 	}
-	//now apply transform to the columns of our new array
-	for(j=0; j<w; j++)
+}
+
+//now apply transform to the columns of our new array
+void TransformStreamB(int w, float *vector, float *input) {
+	for(int j=0; j<w; j++)
 	{
 		//get column
-		for(i=0; i<w; i++)
+		for(int i=0; i<w; i++)
 		{
 			vector[i] = input[i*w + j];
 		}
 		//apply transform
 		Step97(vector, w);
 		//copy back
-		for(i=0; i<w; i++)
+		for(int i=0; i<w; i++)
 		{
 			input[i*w + j] = vector[i];
 		}
 	}
-	//copy top-left subimage into a new array and repeat
-	float *subimage = new float[img_size/4];
-	for(i=0; i<w/2; i++)
+}
+
+void TransformStream2(int w, float *subimage, float *input) {
+	for(int i=0; i<w/2; i++)
 	{
-		for(j=0; j<w/2; j++)
+		for(int j=0; j<w/2; j++)
 		{
 			subimage[i*(w/2) + j] = input[i*w + j];
 		}
 	}
-	TransformStream(subimage, img_size/4);
+}
 
-	//copy new subimage back to top left corner
-	for(i=0; i<w/2; i++)
+void TransformStream3(int w, float *subimage, float *input) {
+	for(int i=0; i<w/2; i++)
 	{
-		for(j=0; j<w/2; j++)
+		for(int j=0; j<w/2; j++)
 		{
 			input[i*w + j] = subimage[i*(w/2) + j];
 		}
 	}
-	delete[] vector;
 }
 
 //Applies the filters to the input (as a 1-d array). Used on one row or column

@@ -16,6 +16,8 @@ void Upsample(unsigned char *input, int &img_size, int steps);
 //between 0 - 255
 unsigned char *Quantize(float *input, int img_size, int amount, wlt_header_info &wlt);
 
+void Quantize2(float *input, int img_size, int amount, int do_scale, int scale, unsigned char *q);
+
 //Rescales the coefficients to their original values after Quantize(...)
 void Rescale(float *input, int img_size, wlt_header_info wlt);
 
@@ -29,6 +31,10 @@ void ToRGB(float *input, int img_size);
 //Transform97() is the controlling function
 void Transform97(float *input, int img_size);
 void TransformStream(float *input, int img_size);
+void TransformStreamA(int w, float *vector, float *input);
+void TransformStreamB(int w, float *vector, float *input);
+void TransformStream2(int w, float *subimage, float *input);
+void TransformStream3(int w, float *subimage, float *input);
 void Step97(float *input, int img_size);
 
 //These three functions together perform a Daubechies 9/7 inverse transform
