@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed May 23 18:13:44 2018
+# Process ID: 33816
+# Current directory: c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/floating_point_0_synth_1
+# Command line: vivado.exe -log floating_point_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source floating_point_0.tcl
+# Log file: c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/floating_point_0_synth_1/floating_point_0.vds
+# Journal file: c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/floating_point_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source floating_point_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 311.219 ; gain = 84.914
+INFO: [Synth 8-638] synthesizing module 'floating_point_0' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_0_1/synth/floating_point_0.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'floating_point_0' (13#1) [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_0_1/synth/floating_point_0.vhd:71]
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 410.559 ; gain = 184.254
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 410.559 ; gain = 184.254
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.056 . Memory (MB): peak = 717.152 ; gain = 1.566
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:48 . Memory (MB): peak = 717.152 ; gain = 490.848
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:48 . Memory (MB): peak = 717.152 ; gain = 490.848
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:48 . Memory (MB): peak = 717.152 ; gain = 490.848
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:49 . Memory (MB): peak = 717.152 ; gain = 490.848
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 717.152 ; gain = 490.848
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 717.152 ; gain = 490.848
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 717.152 ; gain = 490.848
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 726.047 ; gain = 499.742
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 726.047 ; gain = 499.742
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 726.047 ; gain = 499.742
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 726.047 ; gain = 499.742
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 726.047 ; gain = 499.742
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 726.047 ; gain = 499.742
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 726.047 ; gain = 499.742
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     1|
+|2     |LUT1   |     3|
+|3     |LUT2   |    39|
+|4     |LUT3   |    57|
+|5     |LUT4   |    18|
+|6     |LUT5   |    20|
+|7     |LUT6   |    92|
+|8     |MUXCY  |    38|
+|9     |MUXF7  |     2|
+|10    |MUXF8  |     1|
+|11    |SRL16E |     5|
+|12    |XORCY  |    32|
+|13    |FDE    |     6|
+|14    |FDRE   |   297|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 726.047 ; gain = 499.742
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:10 . Memory (MB): peak = 726.141 ; gain = 501.996

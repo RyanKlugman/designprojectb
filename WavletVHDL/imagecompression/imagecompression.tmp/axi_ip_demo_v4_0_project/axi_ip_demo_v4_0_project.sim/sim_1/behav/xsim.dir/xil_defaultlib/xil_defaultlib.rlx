@@ -1,0 +1,13 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd,1527206762,vhdl,,,,axi_ip_demo_v1_0,,,,,,,,
+c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd,1526966956,vhdl,,,,axi_ip_demo_v1_0_s00_axi,,,,,,,,
+c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/Controller.vhd,1527256259,vhdl,,,,controller,,,,,,,,
+c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/bench.vhd,1527202862,vhdl,,,,axi_ip_demo_v1_0_tb,,,,,,,,
+c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/bram.vhd,1527211005,vhdl,,,,bram,,,,,,,,
+c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/floating_point_0_1/sim/floating_point_0.vhd,1527063215,vhdl,,,,floating_point_0,,,,,,,,
+c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/floating_point_1_1/sim/floating_point_1.vhd,1527063218,vhdl,,,,floating_point_1,,,,,,,,
+c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/floating_point_add_1/sim/floating_point_add.vhd,1527063217,vhdl,,,,floating_point_add,,,,,,,,
+c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/quantize.vhd,1527255706,vhdl,,,,quantize,,,,,,,,

@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../../../ip_repo/axi_ip_demo_1.0/src/floating_point_0_1/sim/floating_point_0.vhd"
+vhdl xil_defaultlib  "../../../../../../ip_repo/axi_ip_demo_1.0/src/floating_point_add_1/sim/floating_point_add.vhd"
+vhdl xil_defaultlib  "../../../../../../ip_repo/axi_ip_demo_1.0/src/floating_point_1_1/sim/floating_point_1.vhd"
+vhdl xil_defaultlib  "../../../../../../ip_repo/axi_ip_demo_1.0/src/Controller.vhd"
+vhdl xil_defaultlib  "../../../../../../ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd"
+vhdl xil_defaultlib  "../../../../../../ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd"
+vhdl xil_defaultlib  "../../../../../../ip_repo/axi_ip_demo_1.0/src/bram.vhd"
+vhdl xil_defaultlib  "../../../../../../ip_repo/axi_ip_demo_1.0/src/quantize.vhd"
+vhdl xil_defaultlib  "../../../../../../ip_repo/axi_ip_demo_1.0/src/bench.vhd"
+
+# Do not sort compile order
+nosort

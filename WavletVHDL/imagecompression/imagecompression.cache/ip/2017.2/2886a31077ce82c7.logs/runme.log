@@ -1,0 +1,417 @@
+
+*** Running vivado
+    with args -log system_axi_ip_demo_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_ip_demo_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_axi_ip_demo_0_0.tcl -notrace
+Command: synth_design -top system_axi_ip_demo_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2944 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1153.625 ; gain = 54.996 ; free physical = 4819 ; free virtual = 14371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_axi_ip_demo_0_0' [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/synth/system_axi_ip_demo_0_0.vhd:82]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'axi_ip_demo_v1_0' declared at '/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0.vhd:5' bound to instance 'U0' of component 'axi_ip_demo_v1_0' [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/synth/system_axi_ip_demo_0_0.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'axi_ip_demo_v1_0' [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'axi_ip_demo_v1_0_S00_AXI' declared at '/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:5' bound to instance 'axi_ip_demo_v1_0_S00_AXI_inst' of component 'axi_ip_demo_v1_0_S00_AXI' [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'axi_ip_demo_v1_0_S00_AXI' [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:88]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:267]
+INFO: [Synth 8-226] default block is never used [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:505]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:265]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:504]
+INFO: [Synth 8-256] done synthesizing module 'axi_ip_demo_v1_0_S00_AXI' (1#1) [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-3491] module 'bram' declared at '/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/src/bram.vhd:34' bound to instance 'bram_inst' of component 'bram' [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'bram' [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/src/bram.vhd:44]
+WARNING: [Synth 8-614] signal 'bramActiveAddr' is read in the process but is not in the sensitivity list [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/src/bram.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'bram' (2#1) [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/src/bram.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'axi_ip_demo_v1_0' (3#1) [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/hdl/axi_ip_demo_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_ip_demo_0_0' (4#1) [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/synth/system_axi_ip_demo_0_0.vhd:82]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1195.125 ; gain = 96.496 ; free physical = 4821 ; free virtual = 14377
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1195.125 ; gain = 96.496 ; free physical = 4821 ; free virtual = 14378
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1527.148 ; gain = 0.000 ; free physical = 4525 ; free virtual = 14128
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1527.148 ; gain = 428.520 ; free physical = 4592 ; free virtual = 14197
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1527.148 ; gain = 428.520 ; free physical = 4592 ; free virtual = 14197
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1527.148 ; gain = 428.520 ; free physical = 4594 ; free virtual = 14199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "bramdata" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'bramdata_reg' [/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/bc0d/src/bram.vhd:85]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1527.148 ; gain = 428.520 ; free physical = 4586 ; free virtual = 14191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 18    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	  16 Input     32 Bit        Muxes := 16    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_ip_demo_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 17    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	  16 Input     32 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 5     
+Module bram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/axi_ip_demo_v1_0_S00_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3886] merging instance 'U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/aw_en_reg) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[31]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[30]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[29]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[28]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[27]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[26]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[25]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[24]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[23]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[22]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[21]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[20]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[19]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[18]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[17]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[16]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[15]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[14]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[13]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[12]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[11]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[10]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[9]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[8]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[7]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[6]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[5]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[4]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[3]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[2]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[1]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg0_reg[0]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[31]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[30]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[29]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[28]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[27]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[26]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[25]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[24]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[23]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[22]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[21]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[20]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[19]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[18]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[17]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[16]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[15]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[14]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[13]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[12]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[11]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[10]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[9]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[8]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[7]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[6]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[5]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[4]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[3]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[2]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[1]) is unused and will be removed from module system_axi_ip_demo_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[0]) is unused and will be removed from module system_axi_ip_demo_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1527.148 ; gain = 428.520 ; free physical = 4570 ; free virtual = 14177
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-----------------------+-----------------------+-----------+----------------------+-------------------+
+|Module Name            | RTL Object            | Inference | Size (Depth x Width) | Primitives        | 
++-----------------------+-----------------------+-----------+----------------------+-------------------+
+|system_axi_ip_demo_0_0 | U0/bram_inst/bram_reg | Implied   | 1 K x 32             | RAM256X1S x 128   | 
++-----------------------+-----------------------+-----------+----------------------+-------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1527.148 ; gain = 428.520 ; free physical = 4433 ; free virtual = 14047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1527.148 ; gain = 428.520 ; free physical = 4432 ; free virtual = 14047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1535.156 ; gain = 436.527 ; free physical = 4431 ; free virtual = 14046
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1535.156 ; gain = 436.527 ; free physical = 4431 ; free virtual = 14045
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1535.156 ; gain = 436.527 ; free physical = 4431 ; free virtual = 14045
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1535.156 ; gain = 436.527 ; free physical = 4431 ; free virtual = 14045
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1535.156 ; gain = 436.527 ; free physical = 4431 ; free virtual = 14045
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1535.156 ; gain = 436.527 ; free physical = 4431 ; free virtual = 14045
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1535.156 ; gain = 436.527 ; free physical = 4431 ; free virtual = 14045
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |LUT1      |     1|
+|2     |LUT2      |     3|
+|3     |LUT3      |     4|
+|4     |LUT4      |     9|
+|5     |LUT6      |   219|
+|6     |MUXF7     |    64|
+|7     |MUXF8     |    32|
+|8     |RAM256X1S |   128|
+|9     |FDRE      |   539|
+|10    |FDSE      |     4|
+|11    |LD        |    32|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------------------------+-------------------------+------+
+|      |Instance                          |Module                   |Cells |
++------+----------------------------------+-------------------------+------+
+|1     |top                               |                         |  1035|
+|2     |  U0                              |axi_ip_demo_v1_0         |  1035|
+|3     |    axi_ip_demo_v1_0_S00_AXI_inst |axi_ip_demo_v1_0_S00_AXI |   781|
+|4     |    bram_inst                     |bram                     |   254|
++------+----------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1535.156 ; gain = 436.527 ; free physical = 4431 ; free virtual = 14045
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1535.156 ; gain = 104.504 ; free physical = 4488 ; free virtual = 14103
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1535.164 ; gain = 436.527 ; free physical = 4488 ; free virtual = 14103
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 160 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+
+100 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1535.164 ; gain = 449.121 ; free physical = 4456 ; free virtual = 14072
+INFO: [Common 17-1381] The checkpoint '/media/mitsuaki/Data/UNSW/18s1/cs4601/WavletVHDL/imagecompression/imagecompression.runs/system_axi_ip_demo_0_0_synth_1/system_axi_ip_demo_0_0.dcp' has been generated.

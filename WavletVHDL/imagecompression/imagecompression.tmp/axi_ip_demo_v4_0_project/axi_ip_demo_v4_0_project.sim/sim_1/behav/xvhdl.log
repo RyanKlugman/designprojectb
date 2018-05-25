@@ -1,0 +1,18 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/floating_point_0_1/sim/floating_point_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_0
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/floating_point_add_1/sim/floating_point_add.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_add
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/floating_point_1_1/sim/floating_point_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floating_point_1
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity controller
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity axi_ip_demo_v1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity axi_ip_demo_v1_0_S00_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/bram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bram
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/quantize.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity quantize
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/users/ryan/desktop/wavletvhdl/ip_repo/axi_ip_demo_1.0/src/bench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity axi_ip_demo_v1_0_tb
