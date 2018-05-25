@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Fri May 25 23:44:04 2018
+| Date         : Sat May 26 07:49:01 2018
 | Host         : RYAN-HP running 64-bit major release  (build 9200)
 | Command      : report_utilization -file axi_ip_demo_v1_0_utilization_synth.rpt -pb axi_ip_demo_v1_0_utilization_synth.pb
 | Design       : axi_ip_demo_v1_0
@@ -27,20 +27,18 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+----------------------------+------+-------+-----------+-------+
-|          Site Type         | Used | Fixed | Available | Util% |
-+----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 2525 |     0 |     53200 |  4.75 |
-|   LUT as Logic             |  797 |     0 |     53200 |  1.50 |
-|   LUT as Memory            | 1728 |     0 |     17400 |  9.93 |
-|     LUT as Distributed RAM | 1728 |     0 |           |       |
-|     LUT as Shift Register  |    0 |     0 |           |       |
-| Slice Registers            |  917 |     0 |    106400 |  0.86 |
-|   Register as Flip Flop    |  917 |     0 |    106400 |  0.86 |
-|   Register as Latch        |    0 |     0 |    106400 |  0.00 |
-| F7 Muxes                   |  608 |     0 |     26600 |  2.29 |
-| F8 Muxes                   |    0 |     0 |     13300 |  0.00 |
-+----------------------------+------+-------+-----------+-------+
++-------------------------+------+-------+-----------+-------+
+|        Site Type        | Used | Fixed | Available | Util% |
++-------------------------+------+-------+-----------+-------+
+| Slice LUTs*             |  316 |     0 |     53200 |  0.59 |
+|   LUT as Logic          |  316 |     0 |     53200 |  0.59 |
+|   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
+| Slice Registers         |  667 |     0 |    106400 |  0.63 |
+|   Register as Flip Flop |  667 |     0 |    106400 |  0.63 |
+|   Register as Latch     |    0 |     0 |    106400 |  0.00 |
+| F7 Muxes                |   64 |     0 |     26600 |  0.24 |
+| F8 Muxes                |   32 |     0 |     13300 |  0.24 |
++-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -57,22 +55,23 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 4     |          Yes |           - |        Reset |
+| 2     |          Yes |           - |        Reset |
 | 4     |          Yes |         Set |            - |
-| 909   |          Yes |       Reset |            - |
+| 661   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
 2. Memory
 ---------
 
-+----------------+------+-------+-----------+-------+
-|    Site Type   | Used | Fixed | Available | Util% |
-+----------------+------+-------+-----------+-------+
-| Block RAM Tile |    0 |     0 |       140 |  0.00 |
-|   RAMB36/FIFO* |    0 |     0 |       140 |  0.00 |
-|   RAMB18       |    0 |     0 |       280 |  0.00 |
-+----------------+------+-------+-----------+-------+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |    2 |     0 |       140 |  1.43 |
+|   RAMB36/FIFO*    |    2 |     0 |       140 |  1.43 |
+|     RAMB36E1 only |    2 |       |           |       |
+|   RAMB18          |    0 |     0 |       280 |  0.00 |
++-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
@@ -92,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   98 |     0 |       200 | 49.00 |
+| Bonded IOB                  |   94 |     0 |       200 | 47.00 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
@@ -148,20 +147,21 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| RAMD64E  | 1728 |  Distributed Memory |
-| FDRE     |  909 |        Flop & Latch |
-| MUXF7    |  608 |               MuxFx |
-| LUT6     |  491 |                 LUT |
-| LUT3     |  138 |                 LUT |
-| LUT5     |   88 |                 LUT |
-| IBUF     |   57 |                  IO |
-| LUT4     |   51 |                 LUT |
-| LUT1     |   42 |                 LUT |
+| FDRE     |  661 |        Flop & Latch |
+| LUT6     |  170 |                 LUT |
+| MUXF7    |   64 |               MuxFx |
+| LUT5     |   55 |                 LUT |
+| IBUF     |   53 |                  IO |
+| LUT4     |   45 |                 LUT |
 | OBUF     |   41 |                  IO |
+| LUT1     |   37 |                 LUT |
+| MUXF8    |   32 |               MuxFx |
+| LUT3     |    9 |                 LUT |
 | CARRY4   |    8 |          CarryLogic |
-| LUT2     |    6 |                 LUT |
 | FDSE     |    4 |        Flop & Latch |
-| FDCE     |    4 |        Flop & Latch |
+| RAMB36E1 |    2 |        Block Memory |
+| LUT2     |    2 |                 LUT |
+| FDCE     |    2 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

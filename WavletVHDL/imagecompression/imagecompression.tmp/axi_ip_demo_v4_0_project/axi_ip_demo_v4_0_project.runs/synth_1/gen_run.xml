@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1527255774">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1527284842">
   <File Type="RDS-PROPCONSTRS" Name="axi_ip_demo_v1_0_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="axi_ip_demo_v1_0.tcl"/>
   <File Type="RDS-RDS" Name="axi_ip_demo_v1_0.vds"/>
@@ -10,43 +10,43 @@
   <File Type="VDS-TIMING-PB" Name="axi_ip_demo_v1_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd">
+    <File Path="$PPRDIR/../../../ip_repo/axi_ip_demo_1.0/src/Controller.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd">
+    <File Path="$PPRDIR/../../../ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd">
+    <File Path="$PPRDIR/../../../ip_repo/axi_ip_demo_1.0/src/bram.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd">
+    <File Path="$PPRDIR/../../../ip_repo/axi_ip_demo_1.0/src/quantize.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd">
+    <File Path="$PPRDIR/../../../ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/component.xml">
+    <File Path="$PPRDIR/../../../ip_repo/axi_ip_demo_1.0/component.xml">
       <FileInfo SFType="IPXACT"/>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="axi_ip_demo_v1_0"/>
-      <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../../../ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -56,9 +56,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="floating_point_0"/>

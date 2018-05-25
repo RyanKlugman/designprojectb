@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Wed May 23 18:10:07 2018
+| Date         : Sat May 26 09:37:44 2018
 | Host         : RYAN-HP running 64-bit major release  (build 9200)
 | Command      : report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
 | Design       : system_wrapper
@@ -24,18 +24,24 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
-+----------+----------+-------------------+------------+
-| Rule     | Severity | Description       | Violations |
-+----------+----------+-------------------+------------+
-| PDRC-153 | Warning  | Gated clock check | 1          |
-+----------+----------+-------------------+------------+
+             Violations found: 2
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| AVAL-4    | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 1          |
+| REQP-1725 | Advisory | DSP_Abus_sign_bit_alert                                           | 1          |
++-----------+----------+-------------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-PDRC-153#1 Warning
-Gated clock check  
-Net system_i/axi_ip_demo_0/U0/bram_inst/bramdata_reg[31]_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/axi_ip_demo_0/U0/bram_inst/bramdata_reg[31]_i_1/O, cell system_i/axi_ip_demo_0/U0/bram_inst/bramdata_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+system_i/axi_ip_demo_0/U0/controller_inst/quant/adder/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-1725#1 Advisory
+DSP_Abus_sign_bit_alert  
+system_i/axi_ip_demo_0/U0/controller_inst/quant/adder/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
 Related violations: <none>
 
 

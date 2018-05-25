@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat May 26 03:49:00 2018
+# Process ID: 11848
+# Current directory: C:/Users/Ryan/Desktop/WavletVHDL/imagecompression
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11240 C:\Users\Ryan\Desktop\WavletVHDL\imagecompression\imagecompression.xpr
+# Log file: C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/vivado.log
+# Journal file: C:/Users/Ryan/Desktop/WavletVHDL/imagecompression\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found 'c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_auto_pc_0/stats.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 811.598 ; gain = 139.555
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 26 07:00:34 2018...

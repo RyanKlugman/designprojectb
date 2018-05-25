@@ -38,7 +38,7 @@ architecture bench of axi_ip_demo_v1_0_tb is
   		s00_axi_rvalid	: out std_logic;
   		s00_axi_rready	: in std_logic;
         rst_soft : in std_logic;
-        startSoft: in std_logic 
+        start_soft: in std_logic 
   	);
   end component;
 
@@ -65,7 +65,7 @@ architecture bench of axi_ip_demo_v1_0_tb is
   signal s00_axi_rready: std_logic ;
   signal stop_the_clock: boolean;
   signal rst_soft : std_logic;
-  signal startSoft: std_logic;
+  signal start_soft: std_logic;
   
 begin
 
@@ -94,17 +94,17 @@ begin
                                       s00_axi_rvalid       => s00_axi_rvalid,
                                       s00_axi_rready       => s00_axi_rready,
                                       rst_soft => rst_soft,
-                                      startSoft => startSoft
+                                      start_soft => start_soft
                                       );
 
   stimulus: process
   begin
     rst_soft <= '1';
-    startSoft <= '0';
+    start_soft <= '0';
     wait for clock_period * 5;
     rst_soft <= '0';
     wait for clock_period * 5;
-    startSoft <= '1';
+    start_soft <= '1';
     wait;
   end process;
   

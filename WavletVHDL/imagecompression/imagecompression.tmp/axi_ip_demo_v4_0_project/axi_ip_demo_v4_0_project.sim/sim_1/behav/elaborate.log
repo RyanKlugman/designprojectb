@@ -11,8 +11,6 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
 Compiling package floating_point_v7_1_4.floating_point_v7_1_4_viv_comp
 Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
 Compiling package axi_utils_v2_0_3.axi_utils_v2_0_3_pkg
@@ -20,6 +18,7 @@ Compiling package floating_point_v7_1_4.floating_point_v7_1_4_consts
 Compiling package ieee.math_real
 Compiling package floating_point_v7_1_4.floating_point_v7_1_4_exp_table_...
 Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_pkg
+Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_signed
 Compiling package floating_point_v7_1_4.floating_point_v7_1_4_pkg
 Compiling package floating_point_v7_1_4.flt_utils

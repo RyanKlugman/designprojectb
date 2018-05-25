@@ -14,41 +14,42 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15824 
+INFO: Helper process launched with PID 3464 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 310.480 ; gain = 80.020
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 310.910 ; gain = 80.957
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'axi_ip_demo_v1_0' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'axi_ip_demo_v1_0' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd:51]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'axi_ip_demo_v1_0_S00_AXI' declared at 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:5' bound to instance 'axi_ip_demo_v1_0_S00_AXI_inst' of component 'axi_ip_demo_v1_0_S00_AXI' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd:205]
-INFO: [Synth 8-638] synthesizing module 'axi_ip_demo_v1_0_S00_AXI' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-3491] module 'axi_ip_demo_v1_0_S00_AXI' declared at 'C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:5' bound to instance 'axi_ip_demo_v1_0_S00_AXI_inst' of component 'axi_ip_demo_v1_0_S00_AXI' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'axi_ip_demo_v1_0_S00_AXI' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:88]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-226] default block is never used [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:267]
-INFO: [Synth 8-226] default block is never used [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:505]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:265]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:504]
-INFO: [Synth 8-256] done synthesizing module 'axi_ip_demo_v1_0_S00_AXI' (1#1) [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:88]
-INFO: [Synth 8-3491] module 'bram' declared at 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd:34' bound to instance 'bram_inst' of component 'bram' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd:270]
-INFO: [Synth 8-638] synthesizing module 'bram' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd:53]
-INFO: [Synth 8-256] done synthesizing module 'bram' (2#1) [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd:53]
-INFO: [Synth 8-3491] module 'controller' declared at 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:34' bound to instance 'controller_inst' of component 'Controller' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd:285]
-INFO: [Synth 8-638] synthesizing module 'controller' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:47]
-INFO: [Synth 8-3491] module 'quantize' declared at 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:34' bound to instance 'quant' of component 'quantize' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'quantize' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:47]
-INFO: [Synth 8-3491] module 'floating_point_1' declared at 'c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/realtime/floating_point_1_stub.vhdl:5' bound to instance 'divider' of component 'floating_point_1' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:133]
-INFO: [Synth 8-638] synthesizing module 'floating_point_1' [c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/realtime/floating_point_1_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'floating_point_add' declared at 'c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/realtime/floating_point_add_stub.vhdl:5' bound to instance 'adder' of component 'floating_point_add' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:148]
-INFO: [Synth 8-638] synthesizing module 'floating_point_add' [c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/realtime/floating_point_add_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'floating_point_0' declared at 'c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/realtime/floating_point_0_stub.vhdl:5' bound to instance 'floattofixed' of component 'floating_point_0' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:161]
-INFO: [Synth 8-638] synthesizing module 'floating_point_0' [c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/realtime/floating_point_0_stub.vhdl:18]
-INFO: [Synth 8-256] done synthesizing module 'quantize' (3#1) [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:47]
-WARNING: [Synth 8-614] signal 'rst_soft' is read in the process but is not in the sensitivity list [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:87]
-INFO: [Synth 8-256] done synthesizing module 'controller' (4#1) [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'axi_ip_demo_v1_0' (5#1) [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd:51]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:267]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:505]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:265]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:504]
+INFO: [Synth 8-256] done synthesizing module 'axi_ip_demo_v1_0_S00_AXI' (1#1) [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-3491] module 'bram' declared at 'C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd:5' bound to instance 'bram_inst' of component 'bram' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd:274]
+INFO: [Synth 8-638] synthesizing module 'bram' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd:15]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'bram' (2#1) [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd:15]
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:5' bound to instance 'controller_inst' of component 'Controller' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd:283]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:20]
+INFO: [Synth 8-3491] module 'quantize' declared at 'C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:5' bound to instance 'quant' of component 'quantize' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'quantize' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:17]
+INFO: [Synth 8-3491] module 'floating_point_1' declared at 'C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/realtime/floating_point_1_stub.vhdl:5' bound to instance 'divider' of component 'floating_point_1' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'floating_point_1' [C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/realtime/floating_point_1_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'floating_point_add' declared at 'C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/realtime/floating_point_add_stub.vhdl:5' bound to instance 'adder' of component 'floating_point_add' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'floating_point_add' [C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/realtime/floating_point_add_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'floating_point_0' declared at 'C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/realtime/floating_point_0_stub.vhdl:5' bound to instance 'floattofixed' of component 'floating_point_0' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'floating_point_0' [C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/realtime/floating_point_0_stub.vhdl:18]
+INFO: [Synth 8-256] done synthesizing module 'quantize' (3#1) [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:17]
+WARNING: [Synth 8-614] signal 'rst_soft' is read in the process but is not in the sensitivity list [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'controller' (4#1) [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'axi_ip_demo_v1_0' (5#1) [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd:51]
 WARNING: [Synth 8-3331] design quantize has unconnected port amount[31]
 WARNING: [Synth 8-3331] design quantize has unconnected port amount[30]
 WARNING: [Synth 8-3331] design quantize has unconnected port amount[29]
@@ -81,38 +82,27 @@ WARNING: [Synth 8-3331] design quantize has unconnected port amount[3]
 WARNING: [Synth 8-3331] design quantize has unconnected port amount[2]
 WARNING: [Synth 8-3331] design quantize has unconnected port amount[1]
 WARNING: [Synth 8-3331] design quantize has unconnected port amount[0]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[31]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[30]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[29]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[28]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[27]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[26]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[25]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[24]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[23]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[22]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[21]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[20]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[19]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[18]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[17]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[16]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[15]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[14]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[13]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[12]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[11]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[10]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[9]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[8]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[7]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[6]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[5]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[4]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[3]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[2]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[1]
-WARNING: [Synth 8-3331] design quantize has unconnected port amountInt[0]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[31]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[30]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[29]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[28]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[27]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[26]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[25]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[24]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[23]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[22]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[21]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[20]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[19]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[18]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[17]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[16]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[15]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[14]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[13]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[12]
+WARNING: [Synth 8-3331] design bram has unconnected port addr[11]
 WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
 WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
 WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
@@ -120,7 +110,7 @@ WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_A
 WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 360.438 ; gain = 129.977
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 361.289 ; gain = 131.336
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -130,34 +120,34 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 360.438 ; gain = 129.977
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 361.289 ; gain = 131.336
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/dcp7/floating_point_0_in_context.xdc] for cell 'controller_inst/quant/floattofixed'
-Finished Parsing XDC File [c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/dcp7/floating_point_0_in_context.xdc] for cell 'controller_inst/quant/floattofixed'
-Parsing XDC File [c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/dcp9/floating_point_add_in_context.xdc] for cell 'controller_inst/quant/adder'
-Finished Parsing XDC File [c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/dcp9/floating_point_add_in_context.xdc] for cell 'controller_inst/quant/adder'
-Parsing XDC File [c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/dcp11/floating_point_1_in_context.xdc] for cell 'controller_inst/quant/divider'
-Finished Parsing XDC File [c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-21536-RYAN-HP/dcp11/floating_point_1_in_context.xdc] for cell 'controller_inst/quant/divider'
+Parsing XDC File [C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/dcp7/floating_point_0_in_context.xdc] for cell 'controller_inst/quant/floattofixed'
+Finished Parsing XDC File [C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/dcp7/floating_point_0_in_context.xdc] for cell 'controller_inst/quant/floattofixed'
+Parsing XDC File [C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/dcp9/floating_point_add_in_context.xdc] for cell 'controller_inst/quant/adder'
+Finished Parsing XDC File [C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/dcp9/floating_point_add_in_context.xdc] for cell 'controller_inst/quant/adder'
+Parsing XDC File [C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/dcp11/floating_point_1_in_context.xdc] for cell 'controller_inst/quant/divider'
+Finished Parsing XDC File [C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/.Xil/Vivado-3416-RYAN-HP/dcp11/floating_point_1_in_context.xdc] for cell 'controller_inst/quant/divider'
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 710.449 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 708.742 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 710.449 ; gain = 479.988
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:50 . Memory (MB): peak = 708.742 ; gain = 478.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 710.449 ; gain = 479.988
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:51 . Memory (MB): peak = 708.742 ; gain = 478.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -166,27 +156,23 @@ Applied set_property DONT_TOUCH = true for controller_inst/quant/adder. (constra
 Applied set_property DONT_TOUCH = true for controller_inst/quant/divider. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for controller_inst/quant/floattofixed. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 710.449 ; gain = 479.988
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:51 . Memory (MB): peak = 708.742 ; gain = 478.789
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'b_div_valid_reg' into 'a_div_valid_reg' [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:140]
-WARNING: [Synth 8-6014] Unused sequential element b_div_valid_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:140]
+INFO: [Synth 8-4471] merging register 'b_div_valid_reg' into 'a_div_valid_reg' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:109]
+INFO: [Synth 8-4471] merging register 'div_resetn_reg' into 'a_div_valid_reg' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:105]
+INFO: [Synth 8-4471] merging register 'adder_resetn_reg' into 'a_adder_valid_reg' [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:119]
+WARNING: [Synth 8-6014] Unused sequential element b_div_valid_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element div_resetn_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:105]
+WARNING: [Synth 8-6014] Unused sequential element adder_resetn_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:119]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'quantize'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:143]
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:90]
-INFO: [Synth 8-5544] ROM "done_soft" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "bwe" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "qdata_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "qStart" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "input" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "bre" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "bae" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "currAddr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:57]
+INFO: [Synth 8-5545] ROM "address" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:174]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:143]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -196,27 +182,24 @@ WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [c:/Us
            divide4_state |                              011 |                              010
              round_state |                              100 |                              100
          multiply4_state |                              101 |                              101
+             bound_state |                              110 |                              110
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'quantize'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:174]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:90]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:90]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:57]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:57]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    idle |                              000 |                              000
-                   reads |                              001 |                              001
-                 qenable |                              010 |                              010
-            waitforquant |                              011 |                              011
-                   write |                              100 |                              100
-               writewait |                              101 |                              101
-                     inc |                              110 |                              110
-                    done |                              111 |                              111
+              idle_state |                               00 |                              000
+          quantize_state |                               01 |                              001
+               inc_state |                               10 |                              011
+              done_state |                               11 |                              100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'controller'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:90]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:57]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 710.449 ; gain = 479.988
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:51 . Memory (MB): peak = 708.742 ; gain = 478.789
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -232,22 +215,24 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 30    
+	               32 Bit    Registers := 27    
+	                8 Bit    Registers := 2     
 	                6 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 21    
+	                1 Bit    Registers := 17    
 +---RAMs : 
-	              32K Bit         RAMs := 1     
+	              64K Bit         RAMs := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 20    
+	   2 Input     32 Bit        Muxes := 16    
 	  16 Input     32 Bit        Muxes := 16    
-	   6 Input     32 Bit        Muxes := 2     
-	   8 Input     32 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	  11 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 9     
-	   6 Input      1 Bit        Muxes := 10    
-	   8 Input      1 Bit        Muxes := 12    
+	   7 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   7 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -269,34 +254,35 @@ Detailed RTL Component Info :
 Module bram 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
 +---RAMs : 
-	              32K Bit         RAMs := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 4     
+	              64K Bit         RAMs := 1     
 Module quantize 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 8     
-	                1 Bit    Registers := 10    
+	               32 Bit    Registers := 7     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
 +---Muxes : 
-	   6 Input     32 Bit        Muxes := 2     
-	   7 Input      3 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 10    
+	   7 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 10    
 Module controller 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 3     
-	                1 Bit    Registers := 5     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
 +---Muxes : 
-	   8 Input     32 Bit        Muxes := 1     
-	  11 Input      3 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 12    
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -312,7 +298,8 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element controller_inst/done_soft_reg was removed.  [c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:140]
+WARNING: [Synth 8-6014] Unused sequential element controller_inst/done_soft_reg was removed.  [C:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd:86]
+INFO: [Synth 8-5545] ROM "controller_inst/address" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
 WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
 WARNING: [Synth 8-3331] design axi_ip_demo_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
@@ -339,8 +326,8 @@ INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[16]'
 INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[17]' (FDE) to 'controller_inst/quant/div_data_b_reg[18]'
 INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[18]' (FDE) to 'controller_inst/quant/div_data_b_reg[19]'
 INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[19]' (FDE) to 'controller_inst/quant/div_data_b_reg[20]'
-INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[20]' (FDE) to 'controller_inst/quant/div_data_b_reg[21]'
-INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[21]' (FDE) to 'controller_inst/quant/div_data_b_reg[22]'
+INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[20]' (FDE) to 'controller_inst/quant/div_data_b_reg[22]'
+INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[21]' (FDE) to 'controller_inst/quant/div_data_b_reg[23]'
 INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[22]' (FDE) to 'controller_inst/quant/div_data_b_reg[24]'
 INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[23]' (FDE) to 'controller_inst/quant/div_data_b_reg[30]'
 INFO: [Synth 8-3886] merging instance 'controller_inst/quant/div_data_b_reg[24]' (FDE) to 'controller_inst/quant/div_data_b_reg[25]'
@@ -383,15 +370,20 @@ INFO: [Synth 8-3886] merging instance 'controller_inst/quant/adder_data_a_reg[27
 INFO: [Synth 8-3886] merging instance 'controller_inst/quant/adder_data_a_reg[28]' (FDE) to 'controller_inst/quant/adder_data_a_reg[29]'
 INFO: [Synth 8-3886] merging instance 'controller_inst/quant/adder_data_a_reg[29]' (FDE) to 'controller_inst/quant/adder_data_a_reg[31]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/quant/adder_data_a_reg[31] )
-INFO: [Synth 8-3886] merging instance 'controller_inst/quant/outVal_reg[1]' (FDE) to 'controller_inst/quant/outVal_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/quant/outVal_reg[0] )
-INFO: [Synth 8-3886] merging instance 'controller_inst/qdata_out_reg[1]' (FDE) to 'controller_inst/qdata_out_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/bram_data_in_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/bram_data_in_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/bram_data_in_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/bram_data_in_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/bram_data_in_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/bram_data_in_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/bram_data_in_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/bram_data_in_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/bram_write_en_reg )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\axi_ip_demo_v1_0_S00_AXI_inst/aw_en_reg )
 INFO: [Synth 8-3886] merging instance 'axi_ip_demo_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'axi_ip_demo_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_ip_demo_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'axi_ip_demo_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'axi_ip_demo_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_ip_demo_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\controller_inst/qdata_out_reg[0] )
 WARNING: [Synth 8-3332] Sequential element (axi_ip_demo_v1_0_S00_AXI_inst/aw_en_reg) is unused and will be removed from module axi_ip_demo_v1_0.
 WARNING: [Synth 8-3332] Sequential element (axi_ip_demo_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module axi_ip_demo_v1_0.
 WARNING: [Synth 8-3332] Sequential element (axi_ip_demo_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module axi_ip_demo_v1_0.
@@ -494,20 +486,20 @@ WARNING: [Synth 8-3332] Sequential element (axi_ip_demo_v1_0_S00_AXI_inst/slv_re
 WARNING: [Synth 8-3332] Sequential element (axi_ip_demo_v1_0_S00_AXI_inst/slv_reg2_reg[3]) is unused and will be removed from module axi_ip_demo_v1_0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:42 . Memory (MB): peak = 710.449 ; gain = 479.988
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 708.742 ; gain = 478.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
-Distributed RAM: Preliminary Mapping  Report (see note below)
-+-----------------+--------------------+-----------+----------------------+------------------------------------------------+
-|Module Name      | RTL Object         | Inference | Size (Depth x Width) | Primitives                                     | 
-+-----------------+--------------------+-----------+----------------------+------------------------------------------------+
-|axi_ip_demo_v1_0 | bram_inst/bram_reg | Implied   | 1 K x 32             | RAM64X1D x 32  RAM128X1D x 256  RAM64M x 160   | 
-+-----------------+--------------------+-----------+----------------------+------------------------------------------------+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|bram:       | ram_reg    | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
-Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -521,13 +513,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:53 . Memory (MB): peak = 716.824 ; gain = 486.363
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:11 . Memory (MB): peak = 711.543 ; gain = 481.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:53 . Memory (MB): peak = 718.711 ; gain = 488.250
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:11 . Memory (MB): peak = 712.359 ; gain = 482.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -538,8 +530,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance bram_inst/ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance bram_inst/ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 748.652 ; gain = 518.191
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:12 . Memory (MB): peak = 734.980 ; gain = 505.027
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -563,7 +557,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:54 . Memory (MB): peak = 748.652 ; gain = 518.191
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 734.980 ; gain = 505.027
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -576,7 +570,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:54 . Memory (MB): peak = 748.652 ; gain = 518.191
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 734.980 ; gain = 505.027
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -588,25 +582,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:54 . Memory (MB): peak = 748.652 ; gain = 518.191
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 734.980 ; gain = 505.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:54 . Memory (MB): peak = 748.652 ; gain = 518.191
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 734.980 ; gain = 505.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:55 . Memory (MB): peak = 748.652 ; gain = 518.191
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 734.980 ; gain = 505.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:55 . Memory (MB): peak = 748.652 ; gain = 518.191
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 734.980 ; gain = 505.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -630,20 +624,20 @@ Report Cell Usage:
 |3     |floating_point_add_bbox |     1|
 |4     |BUFG                    |     1|
 |5     |CARRY4                  |     8|
-|6     |LUT1                    |    42|
-|7     |LUT2                    |     6|
-|8     |LUT3                    |   138|
-|9     |LUT4                    |    51|
-|10    |LUT5                    |    88|
-|11    |LUT6                    |   491|
-|12    |MUXF7                   |    96|
-|13    |RAM128X1D               |   256|
-|14    |RAM64M                  |   160|
-|15    |RAM64X1D                |    32|
-|16    |FDCE                    |     4|
-|17    |FDRE                    |   909|
+|6     |LUT1                    |    37|
+|7     |LUT2                    |     2|
+|8     |LUT3                    |     9|
+|9     |LUT4                    |    45|
+|10    |LUT5                    |    55|
+|11    |LUT6                    |   170|
+|12    |MUXF7                   |    64|
+|13    |MUXF8                   |    32|
+|14    |RAMB36E1                |     1|
+|15    |RAMB36E1_1              |     1|
+|16    |FDCE                    |     2|
+|17    |FDRE                    |   661|
 |18    |FDSE                    |     4|
-|19    |IBUF                    |    57|
+|19    |IBUF                    |    53|
 |20    |OBUF                    |    41|
 +------+------------------------+------+
 
@@ -651,32 +645,29 @@ Report Instance Areas:
 +------+--------------------------------+-------------------------+------+
 |      |Instance                        |Module                   |Cells |
 +------+--------------------------------+-------------------------+------+
-|1     |top                             |                         |  2488|
-|2     |  axi_ip_demo_v1_0_S00_AXI_inst |axi_ip_demo_v1_0_S00_AXI |   645|
-|3     |  bram_inst                     |bram                     |  1055|
-|4     |  controller_inst               |controller               |   689|
-|5     |    quant                       |quantize                 |   369|
+|1     |top                             |                         |  1290|
+|2     |  axi_ip_demo_v1_0_S00_AXI_inst |axi_ip_demo_v1_0_S00_AXI |   709|
+|3     |  bram_inst                     |bram                     |     2|
+|4     |  controller_inst               |controller               |   484|
+|5     |    quant                       |quantize                 |   356|
 +------+--------------------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:55 . Memory (MB): peak = 748.652 ; gain = 518.191
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 734.980 ; gain = 505.027
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 156 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 748.652 ; gain = 168.180
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:55 . Memory (MB): peak = 748.652 ; gain = 518.191
+Synthesis finished with 0 errors, 0 critical warnings and 173 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 734.980 ; gain = 157.574
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 734.980 ; gain = 505.027
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 513 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 448 instances were transformed.
-  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 256 instances
-  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 160 instances
-  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+No Unisim elements were transformed.
 
-122 Infos, 189 Warnings, 0 Critical Warnings and 0 Errors encountered.
+125 Infos, 180 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 748.652 ; gain = 524.320
-INFO: [Common 17-1381] The checkpoint 'c:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/axi_ip_demo_v1_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 748.652 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri May 25 23:44:04 2018...
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 734.980 ; gain = 511.133
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.runs/synth_1/axi_ip_demo_v1_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 734.980 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat May 26 07:49:01 2018...

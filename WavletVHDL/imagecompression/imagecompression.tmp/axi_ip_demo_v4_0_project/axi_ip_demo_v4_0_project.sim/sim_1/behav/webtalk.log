@@ -2,13 +2,13 @@
 # Webtalk v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri May 25 09:05:35 2018
-# Process ID: 4404
-# Current directory: c:/users/ryan/desktop/wavletvhdl/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav
-# Command line: wbtcv.exe -mode batch -source c:/users/ryan/desktop/wavletvhdl/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav/xsim.dir/axi_ip_demo_v1_0_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: c:/users/ryan/desktop/wavletvhdl/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav/webtalk.log
-# Journal file: c:/users/ryan/desktop/wavletvhdl/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav\webtalk.jou
+# Start of session at: Sat May 26 04:21:13 2018
+# Process ID: 4692
+# Current directory: C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav/xsim.dir/axi_ip_demo_v1_0_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
-source c:/users/ryan/desktop/wavletvhdl/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav/xsim.dir/axi_ip_demo_v1_0_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'c:/users/ryan/desktop/wavletvhdl/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav/xsim.dir/axi_ip_demo_v1_0_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri May 25 09:05:38 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Fri May 25 09:05:38 2018...
+source C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav/xsim.dir/axi_ip_demo_v1_0_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.sim/sim_1/behav/xsim.dir/axi_ip_demo_v1_0_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat May 26 04:21:17 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat May 26 04:21:17 2018...
