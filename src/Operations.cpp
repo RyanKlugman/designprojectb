@@ -1,6 +1,7 @@
 #include "Operations.h"
 #include "Structs.h"
 #include <string.h>
+#include <stdio.h>
 #include <math.h>
 #include "Wavelet.h"
 
@@ -333,7 +334,6 @@ void TransformStream(float *input, int img_size)
 	//set a limit on how small the smallest subimage can be
 	//we call this function recursively until it reaches this limit
 	if(w == MIN_SUBI) return;
-	int i, j;
 	//temp array for the transform
 	float *vector = new float[w];
 
@@ -376,6 +376,8 @@ void TransformStreamA(int w, float *vector, float *input) {
 
 //now apply transform to the columns of our new array
 void TransformStreamB(int w, float *vector, float *input) {
+	printf("TransformStreamB: len vector: %d\n", w);
+	printf("TransformStreamB: len input: %d\n", w);
 	for(int j=0; j<w; j++)
 	{
 		//get column
@@ -417,6 +419,7 @@ void TransformStream3(int w, float *subimage, float *input) {
 //of image data at a time. Taken from a sample algorithm at http://www.ebi.ac.uk/~gpau/misc/dwt97.c
 void Step97(float* input, int img_size)
 {
+	printf("Step97: len input: %d\n", img_size);
 	float a;
 	int i;
 
