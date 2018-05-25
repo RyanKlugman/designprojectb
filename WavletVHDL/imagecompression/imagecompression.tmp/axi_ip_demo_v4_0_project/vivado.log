@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat May 26 03:27:26 2018
+# Process ID: 30116
+# Current directory: C:/Users/Ryan/Desktop/gitrepo/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15256 C:\Users\Ryan\Desktop\gitrepo\WavletVHDL\imagecompression\imagecompression.tmp\axi_ip_demo_v4_0_project\axi_ip_demo_v4_0_project.xpr
+# Log file: C:/Users/Ryan/Desktop/gitrepo/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/vivado.log
+# Journal file: C:/Users/Ryan/Desktop/gitrepo/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ryan/Desktop/gitrepo/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Ryan/Desktop/gitrepo/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project'
+INFO: [Project 1-313] Project file moved from 'c:/users/ryan/desktop/wavletvhdl/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/component.xml', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/component.xml'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bench.vhd', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bench.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_0_1/floating_point_0.xci', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_0_1/floating_point_0.xci'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_add_1/floating_point_add.xci', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_add_1/floating_point_add.xci'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_1_1/floating_point_1.xci', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_1_1/floating_point_1.xci'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0', nor could it be found using path 'c:/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0'.
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'floating_point_0'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'floating_point_add'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'floating_point_1'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 741.535 ; gain = 39.148
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 26 03:33:36 2018...

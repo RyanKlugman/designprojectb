@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat May 26 03:27:26 2018
+# Process ID: 30116
+# Current directory: C:/Users/Ryan/Desktop/gitrepo/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15256 C:\Users\Ryan\Desktop\gitrepo\WavletVHDL\imagecompression\imagecompression.tmp\axi_ip_demo_v4_0_project\axi_ip_demo_v4_0_project.xpr
+# Log file: C:/Users/Ryan/Desktop/gitrepo/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/vivado.log
+# Journal file: C:/Users/Ryan/Desktop/gitrepo/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ryan/Desktop/gitrepo/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

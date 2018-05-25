@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="c:/users/ryan/desktop/wavletvhdl/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.xpr">
+<Project Version="7" Minor="20" Path="C:/Users/Ryan/Desktop/gitrepo/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v4_0_project/axi_ip_demo_v4_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="a15b2bf9f27641ae855d76eac3de9c56"/>
@@ -56,30 +56,35 @@
       <Filter Type="Srcs"/>
       <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/Controller.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0_S00_AXI.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bram.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/quantize.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -89,8 +94,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="axi_ip_demo_v1_0"/>
-        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/hdl/axi_ip_demo_v1_0.vhd"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -100,8 +104,10 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
       <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bench.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="simulation"/>
           <Attr Name="UsedIn" Val="testbench"/>
         </FileInfo>
@@ -113,8 +119,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="axi_ip_demo_v1_0_tb"/>
-        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/bench.vhd"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SrcSet" Val="sources_1"/>
@@ -125,6 +130,7 @@
     <FileSet Name="floating_point_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/floating_point_0">
       <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_0_1/floating_point_0.xci">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -138,6 +144,7 @@
     <FileSet Name="floating_point_add" Type="BlockSrcs" RelSrcDir="$PSRCDIR/floating_point_add">
       <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_add_1/floating_point_add.xci">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -151,6 +158,7 @@
     <FileSet Name="floating_point_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/floating_point_1">
       <File Path="$PPRDIR/../../../../../../../Users/Ryan/Desktop/WavletVHDL/ip_repo/axi_ip_demo_1.0/src/floating_point_1_1/floating_point_1.xci">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -183,9 +191,7 @@
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -194,9 +200,7 @@
     </Run>
     <Run Id="floating_point_0_synth_1" Type="Ft3:Synth" SrcSet="floating_point_0" Part="xc7z020clg484-1" ConstrsSet="floating_point_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/floating_point_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -205,9 +209,7 @@
     </Run>
     <Run Id="floating_point_add_synth_1" Type="Ft3:Synth" SrcSet="floating_point_add" Part="xc7z020clg484-1" ConstrsSet="floating_point_add" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/floating_point_add_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -216,9 +218,7 @@
     </Run>
     <Run Id="floating_point_1_synth_1" Type="Ft3:Synth" SrcSet="floating_point_1" Part="xc7z020clg484-1" ConstrsSet="floating_point_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/floating_point_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -227,9 +227,7 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -245,9 +243,7 @@
     </Run>
     <Run Id="floating_point_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="floating_point_0" Description="Default settings for Implementation." SynthRun="floating_point_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -263,9 +259,7 @@
     </Run>
     <Run Id="floating_point_add_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="floating_point_add" Description="Default settings for Implementation." SynthRun="floating_point_add_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -281,9 +275,7 @@
     </Run>
     <Run Id="floating_point_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="floating_point_1" Description="Default settings for Implementation." SynthRun="floating_point_1_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
