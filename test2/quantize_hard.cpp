@@ -53,7 +53,7 @@ unsigned char *Quantize_hard(float *input, int img_size, int amount, wlt_header_
 		a[2] = int_amount;				//int_amount
 		writeToRegister(3, scale, a); //scale
 		a[4] = doscale; //doscale
-		a[0] = start; // assert start
+		a[0] = soft_start; // assert start
 		// quantise start signal
 		
 	/*	for (int l = 0 ; l < bram_size ; l++){

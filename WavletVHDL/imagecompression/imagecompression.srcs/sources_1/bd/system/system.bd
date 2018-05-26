@@ -193,7 +193,7 @@
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>axi_ip_demo_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="axi_ip_demo" spirit:vendor="user.org" spirit:version="6.1"/>
+        <spirit:componentRef spirit:library="user" spirit:name="axi_ip_demo" spirit:vendor="user.org" spirit:version="7.10"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_axi_ip_demo_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>

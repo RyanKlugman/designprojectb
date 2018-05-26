@@ -2,10 +2,16 @@
 #include "Structs.h"
 #include <string.h>
 #include <math.h>
+#include <sys/mman.h>
+#include <fcntl.h>    /* For O_RDWR */
+#include <unistd.h>   /* For open(), creat() */
+#include <cstdint>
 
 using namespace std;
 
 #define MIN_SUBI	128	//when the subimages reach this size, we will stop our transforms
+#define BASEADDR 0x43C00000
+#define TOPADDR 0x43C0FFFF
 
 //Downsamples the x and y resolution of the LH, HL and HH subbands by 2x each. Since most of
 //the important info is in the LL sub-band, we can save quite a lot of space with only a small
@@ -178,15 +184,43 @@ void Upsample(unsigned char *input, int &img_size, int steps)
 //and compression. Values between 1 and 8 work well for most images.
 unsigned char *Quantize(float *input, int img_size, int amount, wlt_header_info &wlt)
 {
-	if(amount > 64) amount = 64;
-	unsigned char *q = new unsigned char[img_size];
-	int i;
+	// if(amount > 64) amount = 64;
+	// unsigned char *q = new unsigned char[img_size];
+	// int i;
 
-	//first we need to adjust all coefficients to make sure they are between 0 - 255
-	//we will scale them according to the maximum value and then center them around 128
+	// //first we need to adjust all coefficients to make sure they are between 0 - 255
+	// //we will scale them according to the maximum value and then center them around 128
+	// float max=0;
+	// int do_scale = 0;
+	// for(i=0; i<img_size; i++)
+	// {
+	// 	int abs;
+	// 	if(input[i] < 0) abs = input[i] * (-1);
+	// 	else abs = input[i];
+	// 	if(abs > max) max = abs;
+	// }
+	// if(max > 255) do_scale = 1;
+	// float scale = max / 128;
+	// wlt.scale = scale; //we will need this value on decompression
+
+	// for(i=0; i<img_size; i++)
+	// {
+	// 	//scale to between 0 - 255
+	// 	if(do_scale == 1) input[i] = (input[i] / scale) + 128;
+	// 	//now, quantize the pixel values
+	// 	input[i] = input[i] / amount;
+	// 	input[i] = (int)(input[i]+0.5); //round up or down
+	// 	input[i] = input[i] * amount; //scale back up
+	// 	if(input[i] > 255) input[i]=255;
+	// 	if(input[i] < 0) input[i]=0;
+	// 	q[i] = ((unsigned char)input[i]);
+	// }
+	unsigned char *q = new unsigned char[img_size];
+
+	if(amount > 64) amount = 64;
 	float max=0;
 	int do_scale = 0;
-	for(i=0; i<img_size; i++)
+	for(int i=0; i<img_size; i++)
 	{
 		int abs;
 		if(input[i] < 0) abs = input[i] * (-1);
@@ -197,18 +231,45 @@ unsigned char *Quantize(float *input, int img_size, int amount, wlt_header_info 
 	float scale = max / 128;
 	wlt.scale = scale; //we will need this value on decompression
 
-	for(i=0; i<img_size; i++)
-	{
-		//scale to between 0 - 255
-		if(do_scale == 1) input[i] = (input[i] / scale) + 128;
-		//now, quantize the pixel values
-		input[i] = input[i] / amount;
-		input[i] = (int)(input[i]+0.5); //round up or down
-		input[i] = input[i] * amount; //scale back up
-		if(input[i] > 255) input[i]=255;
-		if(input[i] < 0) input[i]=0;
-		q[i] = ((unsigned char)input[i]);
+	printf("Starting Hardware part");
+
+	int fd;
+	fd = open("/dev/mem", O_RDWR);
+	if(fd == -1){
+		printf("No file\n");
+		return q;
 	}
+	uint32_t* registers;
+	registers = (uint32_t *) mmap(NULL, TOPADDR-BASEADDR, PROT_READ|PROT_WRITE,MAP_SHARED,
+		 fd, BASEADDR);
+
+	int bram_size = 1024;
+	int times = img_size / bram_size;//...
+	float *partition = new float[bram_size];
+	// int reset = 1;
+	int soft_start = 1;
+	// int int_amount = (int) amount;
+	for(int i = 0; i < 1024; i ++){
+		writeToBRAM(i, input[i],registers);	
+	}
+	//0 start signal
+	//Adress 1 hold float Amount
+	writeToRegister(1,amount,registers);
+	//Regiset 2 holds scale amount
+	writeToRegister(2, scale, registers); //scale
+
+	registers[4] = do_scale;
+	//starting hardware.
+	registers[0] = soft_start;
+
+	while ((registers[5] = 0)){ //polling for done
+		//polling register 5 for done signal
+	}
+
+	printf("Done\n");
+
+	//a[0] = reset;
+
 	return q;
 }
 
@@ -618,4 +679,29 @@ void InvStep97(float* input, int img_size)
 		input[i]+=a*(input[i-1]+input[i+1]);
 	} 
 	input[img_size-1]+=2*a*input[img_size-2];
+}
+
+float readFromRegister(int addr, uint32_t * memory){
+	int x = (int)memory[addr];
+	float d;
+	memcpy(&d,&x,sizeof(float));
+//	printf("Memory %d is : %f\n",addr,d);
+	return d;
+}
+
+void writeToRegister(int addr, float data, uint32_t *memory){
+	memcpy(&memory[addr],&data,sizeof(float));
+}
+
+void writeToBRAM(int32_t addr, float data,uint32_t * memory) {
+	memory[8] = addr;
+	memcpy(&memory[7],&data,sizeof(float));
+}
+
+float readFromBRAM(int32_t addr, uint32_t * memory) {
+	memory[8] = addr;	
+	int b = (int)memory[6];
+	float c;
+	memcpy(&c,&b,sizeof(float));
+	return c;
 }

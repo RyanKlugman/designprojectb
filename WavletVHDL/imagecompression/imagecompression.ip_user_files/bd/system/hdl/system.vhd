@@ -1,8 +1,8 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
---Date        : Sat May 26 09:20:51 2018
---Host        : RYAN-HP running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+--Date        : Sat May 26 22:39:54 2018
+--Host        : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
 --Command     : generate_target system.bd
 --Design      : system
 --Purpose     : IP block netlist
@@ -723,8 +723,6 @@ architecture STRUCTURE of system is
     s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC;
-    rst_soft : in STD_LOGIC;
-    start_soft : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC
   );
@@ -819,7 +817,6 @@ architecture STRUCTURE of system is
 begin
 axi_ip_demo_0: component system_axi_ip_demo_0_0
      port map (
-      rst_soft => '0',
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
       s00_axi_araddr(5 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(5 downto 0),
       s00_axi_aresetn => rst_ps7_0_100M_peripheral_aresetn(0),
@@ -840,8 +837,7 @@ axi_ip_demo_0: component system_axi_ip_demo_0_0
       s00_axi_wdata(31 downto 0) => ps7_0_axi_periph_M00_AXI_WDATA(31 downto 0),
       s00_axi_wready => ps7_0_axi_periph_M00_AXI_WREADY,
       s00_axi_wstrb(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
-      s00_axi_wvalid => ps7_0_axi_periph_M00_AXI_WVALID,
-      start_soft => '0'
+      s00_axi_wvalid => ps7_0_axi_periph_M00_AXI_WVALID
     );
 processing_system7_0: component system_processing_system7_0_0
      port map (

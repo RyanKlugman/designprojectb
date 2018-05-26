@@ -10,166 +10,57 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1356223398fs"></ZoomStartTime>
-      <ZoomEndTime time="11728755321fs"></ZoomEndTime>
-      <Cursor1Time time="10000000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="3180000001fs"></ZoomEndTime>
+      <Cursor1Time time="150000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="142"></ValueColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="38" />
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/s00_axi_aclk" type="logic">
+   <WVObjectSize size="11" />
+   <wvobject type="logic" fp_name="/axi_ip_demo_v1_0_tb/s00_axi_aclk">
       <obj_property name="ElementShortName">s00_axi_aclk</obj_property>
       <obj_property name="ObjectShortName">s00_axi_aclk</obj_property>
    </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/rst_soft" type="logic">
+   <wvobject type="logic" fp_name="/axi_ip_demo_v1_0_tb/rst_soft">
       <obj_property name="ElementShortName">rst_soft</obj_property>
       <obj_property name="ObjectShortName">rst_soft</obj_property>
    </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/startSoft" type="logic">
-      <obj_property name="ElementShortName">startSoft</obj_property>
-      <obj_property name="ObjectShortName">startSoft</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/done_soft" type="logic">
+   <wvobject type="logic" fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/done_soft">
       <obj_property name="ElementShortName">done_soft</obj_property>
       <obj_property name="ObjectShortName">done_soft</obj_property>
    </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/bwe" type="logic">
-      <obj_property name="ElementShortName">bwe</obj_property>
-      <obj_property name="ObjectShortName">bwe</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/bae" type="logic">
-      <obj_property name="ElementShortName">bae</obj_property>
-      <obj_property name="ObjectShortName">bae</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/bre" type="logic">
-      <obj_property name="ElementShortName">bre</obj_property>
-      <obj_property name="ObjectShortName">bre</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/bread_in" type="array">
-      <obj_property name="ElementShortName">bread_in[31:0]</obj_property>
-      <obj_property name="ObjectShortName">bread_in[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/qdata_out" type="array">
-      <obj_property name="ElementShortName">qdata_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">qdata_out[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/baddr" type="array">
-      <obj_property name="ElementShortName">baddr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">baddr[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/state" type="other">
+   <wvobject type="other" fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/state">
       <obj_property name="ElementShortName">state</obj_property>
       <obj_property name="ObjectShortName">state</obj_property>
    </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/currAddr" type="array">
-      <obj_property name="ElementShortName">currAddr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">currAddr[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/doscale" type="logic">
-      <obj_property name="ElementShortName">doscale</obj_property>
-      <obj_property name="ObjectShortName">doscale</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/amount" type="array">
+   <wvobject type="array" fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/amount">
       <obj_property name="ElementShortName">amount[31:0]</obj_property>
       <obj_property name="ObjectShortName">amount[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/quant/output" type="array">
+   <wvobject type="array" fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/quant/output">
       <obj_property name="ElementShortName">output[7:0]</obj_property>
       <obj_property name="ObjectShortName">output[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/input" type="array">
-      <obj_property name="ElementShortName">input[31:0]</obj_property>
-      <obj_property name="ObjectShortName">input[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/quant/done" type="logic">
+   <wvobject type="logic" fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/quant/done">
       <obj_property name="ElementShortName">done</obj_property>
       <obj_property name="ObjectShortName">done</obj_property>
    </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/scaleAmount" type="array">
-      <obj_property name="ElementShortName">scaleAmount[31:0]</obj_property>
-      <obj_property name="ObjectShortName">scaleAmount[31:0]</obj_property>
+   <wvobject type="logic" fp_name="/axi_ip_demo_v1_0_tb/uut/bram_write_en">
+      <obj_property name="ElementShortName">bram_write_en</obj_property>
+      <obj_property name="ObjectShortName">bram_write_en</obj_property>
    </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/quantOut" type="array">
-      <obj_property name="ElementShortName">quantOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">quantOut[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject type="array" fp_name="/axi_ip_demo_v1_0_tb/uut/bram_addr">
+      <obj_property name="ElementShortName">bram_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addr[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/qdata" type="array">
-      <obj_property name="ElementShortName">qdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">qdata[31:0]</obj_property>
+   <wvobject type="array" fp_name="/axi_ip_demo_v1_0_tb/uut/bram_data_in">
+      <obj_property name="ElementShortName">bram_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_data_in[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/controller_inst/qStart" type="logic">
-      <obj_property name="ElementShortName">qStart</obj_property>
-      <obj_property name="ObjectShortName">qStart</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/contr_bae" type="logic">
-      <obj_property name="ElementShortName">contr_bae</obj_property>
-      <obj_property name="ObjectShortName">contr_bae</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/contr_read" type="logic">
-      <obj_property name="ElementShortName">contr_read</obj_property>
-      <obj_property name="ObjectShortName">contr_read</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/contr_addr" type="array">
-      <obj_property name="ElementShortName">contr_addr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">contr_addr[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/quantData" type="array">
-      <obj_property name="ElementShortName">quantData[31:0]</obj_property>
-      <obj_property name="ObjectShortName">quantData[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bramConOut" type="array">
-      <obj_property name="ElementShortName">bramConOut[31:0]</obj_property>
-      <obj_property name="ObjectShortName">bramConOut[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/currAdd" type="array">
-      <obj_property name="ElementShortName">currAdd[31:0]</obj_property>
-      <obj_property name="ObjectShortName">currAdd[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bramActiveAddr" type="other">
-      <obj_property name="ElementShortName">bramActiveAddr</obj_property>
-      <obj_property name="ObjectShortName">bramActiveAddr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bram[0]" type="array">
-      <obj_property name="ElementShortName">[0][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[0][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bram[1]" type="array">
-      <obj_property name="ElementShortName">[1][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[1][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bram[2]" type="array">
-      <obj_property name="ElementShortName">[2][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[2][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bram[3]" type="array">
-      <obj_property name="ElementShortName">[3][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[3][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bram[4]" type="array">
-      <obj_property name="ElementShortName">[4][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[4][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bram[5]" type="array">
-      <obj_property name="ElementShortName">[5][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[5][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bram[6]" type="array">
-      <obj_property name="ElementShortName">[6][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[6][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bram[7]" type="array">
-      <obj_property name="ElementShortName">[7][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[7][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bram[8]" type="array">
-      <obj_property name="ElementShortName">[8][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[8][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/axi_ip_demo_v1_0_tb/uut/bram_inst/bram[9]" type="array">
-      <obj_property name="ElementShortName">[9][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+   <wvobject type="array" fp_name="/axi_ip_demo_v1_0_tb/uut/bram_data_out">
+      <obj_property name="ElementShortName">bram_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_data_out[31:0]</obj_property>
    </wvobject>
 </wave_config>

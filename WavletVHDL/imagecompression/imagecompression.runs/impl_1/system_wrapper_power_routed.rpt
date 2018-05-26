@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Sat May 26 09:37:51 2018
-| Host             : RYAN-HP running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date             : Sat May 26 23:07:48 2018
+| Host             : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
 | Device           : xc7z020clg484-1
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 1.724  |
-| Dynamic (W)              | 1.572  |
-| Device Static (W)        | 0.152  |
+| Total On-Chip Power (W)  | 1.745  |
+| Dynamic (W)              | 1.592  |
+| Device Static (W)        | 0.153  |
 | Effective TJA (C/W)      | 11.5   |
-| Max Ambient (C)          | 65.1   |
-| Junction Temperature (C) | 44.9   |
+| Max Ambient (C)          | 64.9   |
+| Junction Temperature (C) | 45.1   |
 | Confidence Level         | Medium |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -49,20 +49,20 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.011 |        3 |       --- |             --- |
-| Slice Logic             |     0.014 |     5872 |       --- |             --- |
-|   LUT as Logic          |     0.011 |     1759 |     53200 |            3.31 |
+| Clocks                  |     0.012 |        3 |       --- |             --- |
+| Slice Logic             |     0.017 |     6631 |       --- |             --- |
+|   LUT as Logic          |     0.013 |     1862 |     53200 |            3.50 |
 |   CARRY4                |     0.002 |      246 |     13300 |            1.85 |
-|   Register              |     0.001 |     2753 |    106400 |            2.59 |
+|   Register              |     0.002 |     3389 |    106400 |            3.19 |
 |   LUT as Shift Register |    <0.001 |      110 |     17400 |            0.63 |
 |   F7/F8 Muxes           |    <0.001 |       97 |     53200 |            0.18 |
 |   Others                |     0.000 |      637 |       --- |             --- |
-| Signals                 |     0.014 |     3634 |       --- |             --- |
-| Block RAM               |     0.003 |        2 |       140 |            1.43 |
-| DSPs                    |    <0.001 |        2 |       220 |            0.91 |
+| Signals                 |     0.016 |     4345 |       --- |             --- |
+| Block RAM               |     0.017 |        8 |       140 |            5.71 |
+| DSPs                    |     0.001 |        2 |       220 |            0.91 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
-| Static Power            |     0.152 |          |           |                 |
-| Total                   |     1.724 |          |           |                 |
+| Static Power            |     0.153 |          |           |                 |
+| Total                   |     1.745 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.058 |       0.043 |      0.015 |
+| Vccint    |       1.000 |     0.077 |       0.062 |      0.016 |
 | Vccaux    |       1.800 |     0.021 |       0.000 |      0.021 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -81,7 +81,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| Vccbram   |       1.000 |     0.003 |       0.001 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -148,24 +148,24 @@ Table of Contents
 +------------------------------------------------------------------+-----------+
 | Name                                                             | Power (W) |
 +------------------------------------------------------------------+-----------+
-| system_wrapper                                                   |     1.572 |
-|   system_i                                                       |     1.572 |
-|     axi_ip_demo_0                                                |     0.038 |
-|       U0                                                         |     0.038 |
+| system_wrapper                                                   |     1.592 |
+|   system_i                                                       |     1.592 |
+|     axi_ip_demo_0                                                |     0.058 |
+|       U0                                                         |     0.058 |
 |         axi_ip_demo_v1_0_S00_AXI_inst                            |     0.003 |
-|         bram_inst                                                |     0.004 |
-|         controller_inst                                          |     0.031 |
-|           quant                                                  |     0.030 |
-|             adder                                                |     0.003 |
-|               U0                                                 |     0.003 |
-|                 i_synth                                          |     0.003 |
-|                   ADDSUB_OP.ADDSUB                               |     0.002 |
-|                     SPEED_OP.DSP.OP                              |     0.002 |
+|         bram_inst                                                |     0.018 |
+|         controller_inst                                          |     0.036 |
+|           quant                                                  |     0.036 |
+|             adder                                                |     0.006 |
+|               U0                                                 |     0.006 |
+|                 i_synth                                          |     0.006 |
+|                   ADDSUB_OP.ADDSUB                               |     0.005 |
+|                     SPEED_OP.DSP.OP                              |     0.005 |
 |                       A_IP_DELAY                                 |    <0.001 |
 |                         i_pipe                                   |    <0.001 |
 |                       B_IP_DELAY                                 |    <0.001 |
 |                         i_pipe                                   |    <0.001 |
-|                       DSP48E1_BODY.ALIGN_ADD                     |    <0.001 |
+|                       DSP48E1_BODY.ALIGN_ADD                     |     0.001 |
 |                         CIN_DELAY                                |    <0.001 |
 |                           i_pipe                                 |    <0.001 |
 |                         DSP2                                     |    <0.001 |
@@ -186,7 +186,7 @@ Table of Contents
 |                           CARRY_ZERO_DET                         |    <0.001 |
 |                         Z_14_LZD_DELAY                           |    <0.001 |
 |                           i_pipe                                 |    <0.001 |
-|                       DSP48E1_BODY.EXP                           |    <0.001 |
+|                       DSP48E1_BODY.EXP                           |     0.001 |
 |                         A_EXP_DELAY                              |    <0.001 |
 |                           i_pipe                                 |    <0.001 |
 |                         BMA_EXP_DELAY                            |    <0.001 |
@@ -232,7 +232,7 @@ Table of Contents
 |                         merged_sub_mux.STRUCT_ADD                |    <0.001 |
 |                         merged_sub_mux.mux_DELAY                 |    <0.001 |
 |                           i_pipe                                 |    <0.001 |
-|                       DSP48E1_BODY.NORM_RND                      |    <0.001 |
+|                       DSP48E1_BODY.NORM_RND                      |     0.001 |
 |                         FULL_USAGE_DSP.LOD                       |    <0.001 |
 |                           DIST_DELAY                             |    <0.001 |
 |                             i_pipe                               |    <0.001 |
@@ -256,10 +256,10 @@ Table of Contents
 |                       OP                                         |    <0.001 |
 |                   i_nd_to_rdy                                    |    <0.001 |
 |                   need_combiner.use_2to1.skid_buffer_combiner    |    <0.001 |
-|             divider                                              |     0.020 |
-|               U0                                                 |     0.020 |
-|                 i_synth                                          |     0.020 |
-|                   DIV_OP.SPD.OP                                  |     0.019 |
+|             divider                                              |     0.023 |
+|               U0                                                 |     0.023 |
+|                 i_synth                                          |     0.023 |
+|                   DIV_OP.SPD.OP                                  |     0.021 |
 |                     EXP                                          |    <0.001 |
 |                       COND_DET_A                                 |    <0.001 |
 |                         EXP_DET_LUT.EXP_ALL_ONE_DEL              |    <0.001 |
@@ -269,7 +269,11 @@ Table of Contents
 |                         MANT_LUTS.CHUNK_IS_ZERO_DEL              |    <0.001 |
 |                           i_pipe                                 |    <0.001 |
 |                       COND_DET_B                                 |    <0.001 |
+|                         EXP_DET_LUT.EXP_ALL_ONE_DEL              |    <0.001 |
+|                           i_pipe                                 |    <0.001 |
 |                         EXP_DET_LUT.EXP_ALL_ZERO_DEL             |    <0.001 |
+|                           i_pipe                                 |    <0.001 |
+|                         MANT_LUTS.CHUNK_IS_ZERO_DEL              |    <0.001 |
 |                           i_pipe                                 |    <0.001 |
 |                       EXP_PRE_RND_DEL                            |    <0.001 |
 |                         i_pipe                                   |    <0.001 |
@@ -293,7 +297,7 @@ Table of Contents
 |                         i_pipe                                   |    <0.001 |
 |                       STATE_UP_DELAY                             |    <0.001 |
 |                         i_pipe                                   |    <0.001 |
-|                     MANT_DIV                                     |     0.018 |
+|                     MANT_DIV                                     |     0.019 |
 |                       RT[0].ADDSUB                               |    <0.001 |
 |                         ADDSUB                                   |    <0.001 |
 |                           Q_DEL                                  |    <0.001 |
@@ -472,7 +476,7 @@ Table of Contents
 |                       RND_BIT_GEN                                |    <0.001 |
 |                         NORM_1_OR_0.STRUCT_REQ.GENERAL.RND1      |    <0.001 |
 |                   i_nd_to_rdy                                    |    <0.001 |
-|                   need_combiner.use_2to1.skid_buffer_combiner    |    <0.001 |
+|                   need_combiner.use_2to1.skid_buffer_combiner    |     0.001 |
 |             floattofixed                                         |     0.005 |
 |               U0                                                 |     0.005 |
 |                 i_synth                                          |     0.005 |
@@ -544,7 +548,7 @@ Table of Contents
 |               RD.r_channel_0                                     |    <0.001 |
 |                 rd_data_fifo_0                                   |    <0.001 |
 |                 transaction_fifo_0                               |    <0.001 |
-|               SI_REG                                             |     0.002 |
+|               SI_REG                                             |     0.001 |
 |                 ar_pipe                                          |    <0.001 |
 |                 aw_pipe                                          |    <0.001 |
 |                 b_pipe                                           |    <0.001 |

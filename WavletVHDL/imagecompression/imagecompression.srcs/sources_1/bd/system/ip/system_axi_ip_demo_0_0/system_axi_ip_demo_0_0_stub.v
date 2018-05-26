@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Sat May 26 09:31:53 2018
-// Host        : RYAN-HP running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+// Date        : Sat May 26 23:05:25 2018
+// Host        : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/system_axi_ip_demo_0_0_stub.v
+//               /home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/system_axi_ip_demo_0_0_stub.v
 // Design      : system_axi_ip_demo_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

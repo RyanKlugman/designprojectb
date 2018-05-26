@@ -37,4 +37,12 @@ void Inverse97(float *input, int img_size, int steps);
 void InverseStream(float *input, int img_size, int steps);
 void InvStep97(float* input, int img_size);
 
+
+
+void writeToBRAM(int32_t addr, float data,uint32_t * memory);
+float readFromBRAM(int32_t addr, uint32_t * memory);
+float readFromRegister(int addr, uint32_t * memory);
+void writeToRegister(int addr, float data, uint32_t *memory);
+float readFromIntBRAM(int32_t addr, uint32_t * memory);
+
 #endif
