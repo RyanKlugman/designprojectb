@@ -14,43 +14,43 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4400 
+INFO: Helper process launched with PID 8218 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1155.629 ; gain = 56.996 ; free physical = 3894 ; free virtual = 13983
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1155.625 ; gain = 56.996 ; free physical = 3471 ; free virtual = 13744
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'system_axi_ip_demo_0_0' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/synth/system_axi_ip_demo_0_0.vhd:82]
-INFO: [Synth 8-3491] module 'axi_ip_demo_v1_0' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0.vhd:5' bound to instance 'U0' of component 'axi_ip_demo_v1_0' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/synth/system_axi_ip_demo_0_0.vhd:141]
-INFO: [Synth 8-638] synthesizing module 'axi_ip_demo_v1_0' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0.vhd:51]
-INFO: [Synth 8-3491] module 'axi_ip_demo_v1_0_S00_AXI' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:5' bound to instance 'axi_ip_demo_v1_0_S00_AXI_inst' of component 'axi_ip_demo_v1_0_S00_AXI' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0.vhd:210]
-INFO: [Synth 8-638] synthesizing module 'axi_ip_demo_v1_0_S00_AXI' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:88]
-INFO: [Synth 8-226] default block is never used [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:267]
-INFO: [Synth 8-226] default block is never used [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:505]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:265]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:504]
-INFO: [Synth 8-256] done synthesizing module 'axi_ip_demo_v1_0_S00_AXI' (1#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:88]
-INFO: [Synth 8-3491] module 'bram' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/bram.vhd:5' bound to instance 'bram_inst' of component 'bram' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0.vhd:276]
-INFO: [Synth 8-638] synthesizing module 'bram' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/bram.vhd:15]
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/bram.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'bram' (2#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/bram.vhd:15]
-INFO: [Synth 8-3491] module 'controller' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/Controller.vhd:5' bound to instance 'controller_inst' of component 'Controller' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0.vhd:285]
-INFO: [Synth 8-638] synthesizing module 'controller' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/Controller.vhd:20]
-INFO: [Synth 8-3491] module 'quantize' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:5' bound to instance 'quant' of component 'quantize' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/Controller.vhd:42]
-INFO: [Synth 8-638] synthesizing module 'quantize' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:17]
-INFO: [Synth 8-3491] module 'floating_point_1' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_1_1/synth/floating_point_1.vhd:59' bound to instance 'divider' of component 'floating_point_1' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:102]
+INFO: [Synth 8-3491] module 'axi_ip_demo_v1_0' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0.vhd:5' bound to instance 'U0' of component 'axi_ip_demo_v1_0' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/synth/system_axi_ip_demo_0_0.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'axi_ip_demo_v1_0' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0.vhd:51]
+INFO: [Synth 8-3491] module 'axi_ip_demo_v1_0_S00_AXI' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:5' bound to instance 'axi_ip_demo_v1_0_S00_AXI_inst' of component 'axi_ip_demo_v1_0_S00_AXI' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'axi_ip_demo_v1_0_S00_AXI' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-226] default block is never used [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:267]
+INFO: [Synth 8-226] default block is never used [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:505]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:265]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:504]
+INFO: [Synth 8-256] done synthesizing module 'axi_ip_demo_v1_0_S00_AXI' (1#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-3491] module 'bram' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/bram.vhd:5' bound to instance 'bram_inst' of component 'bram' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0.vhd:278]
+INFO: [Synth 8-638] synthesizing module 'bram' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/bram.vhd:15]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/bram.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'bram' (2#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/bram.vhd:15]
+INFO: [Synth 8-3491] module 'controller' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/Controller.vhd:5' bound to instance 'controller_inst' of component 'Controller' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0.vhd:287]
+INFO: [Synth 8-638] synthesizing module 'controller' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/Controller.vhd:21]
+INFO: [Synth 8-3491] module 'quantize' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:5' bound to instance 'quant' of component 'quantize' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/Controller.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'quantize' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:17]
+INFO: [Synth 8-3491] module 'floating_point_1' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_1_1/synth/floating_point_1.vhd:59' bound to instance 'divider' of component 'floating_point_1' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:102]
 INFO: [Synth 8-638] synthesizing module 'floating_point_1' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_1_1/synth/floating_point_1.vhd:75]
 INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_0_1/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_1_1/synth/floating_point_1.vhd:203]
 INFO: [Synth 8-256] done synthesizing module 'floating_point_1' (17#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_1_1/synth/floating_point_1.vhd:75]
-INFO: [Synth 8-3491] module 'floating_point_add' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_add_1/synth/floating_point_add.vhd:59' bound to instance 'adder' of component 'floating_point_add' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:117]
+INFO: [Synth 8-3491] module 'floating_point_add' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_add_1/synth/floating_point_add.vhd:59' bound to instance 'adder' of component 'floating_point_add' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:117]
 INFO: [Synth 8-638] synthesizing module 'floating_point_add' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_add_1/synth/floating_point_add.vhd:75]
 INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_0_1/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_add_1/synth/floating_point_add.vhd:203]
 INFO: [Synth 8-256] done synthesizing module 'floating_point_add' (29#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_add_1/synth/floating_point_add.vhd:75]
-INFO: [Synth 8-3491] module 'floating_point_0' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_0_1/synth/floating_point_0.vhd:59' bound to instance 'floattofixed' of component 'floating_point_0' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:130]
+INFO: [Synth 8-3491] module 'floating_point_0' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_0_1/synth/floating_point_0.vhd:59' bound to instance 'floattofixed' of component 'floating_point_0' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:130]
 INFO: [Synth 8-638] synthesizing module 'floating_point_0' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_0_1/synth/floating_point_0.vhd:71]
 INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_0_1/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_0_1/synth/floating_point_0.vhd:195]
 INFO: [Synth 8-256] done synthesizing module 'floating_point_0' (34#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/src/floating_point_0_1/synth/floating_point_0.vhd:71]
-INFO: [Synth 8-256] done synthesizing module 'quantize' (35#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'controller' (36#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/Controller.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'axi_ip_demo_v1_0' (37#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/hdl/axi_ip_demo_v1_0.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'quantize' (35#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'controller' (36#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/Controller.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'axi_ip_demo_v1_0' (37#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/hdl/axi_ip_demo_v1_0.vhd:51]
 INFO: [Synth 8-256] done synthesizing module 'system_axi_ip_demo_0_0' (38#1) [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/synth/system_axi_ip_demo_0_0.vhd:82]
 WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized11 has unconnected port SCLR
 WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized11 has unconnected port SSET
@@ -154,7 +154,7 @@ WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unc
 WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_b_tdata[30]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1267.629 ; gain = 168.996 ; free physical = 3776 ; free virtual = 13908
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1267.625 ; gain = 168.996 ; free physical = 3430 ; free virtual = 13715
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -164,7 +164,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1267.629 ; gain = 168.996 ; free physical = 3785 ; free virtual = 13916
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1267.625 ; gain = 168.996 ; free physical = 3439 ; free virtual = 13723
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1518 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -181,16 +181,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 20 instances were transformed.
   FDE => FDRE: 20 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1503.395 ; gain = 3.000 ; free physical = 3517 ; free virtual = 13650
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1503.266 ; gain = 2.000 ; free physical = 3170 ; free virtual = 13455
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1503.395 ; gain = 404.762 ; free physical = 3588 ; free virtual = 13729
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1503.266 ; gain = 404.637 ; free physical = 3247 ; free virtual = 13538
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1503.395 ; gain = 404.762 ; free physical = 3588 ; free virtual = 13729
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1503.266 ; gain = 404.637 ; free physical = 3247 ; free virtual = 13538
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -199,7 +199,7 @@ Applied set_property DONT_TOUCH = true for U0/controller_inst/quant/adder. (cons
 Applied set_property DONT_TOUCH = true for U0/controller_inst/quant/divider. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for U0/controller_inst/quant/floattofixed. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1503.395 ; gain = 404.762 ; free physical = 3590 ; free virtual = 13731
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1503.266 ; gain = 404.637 ; free physical = 3248 ; free virtual = 13539
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
@@ -220,22 +220,21 @@ INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too spars
 INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-4471] merging register 'b_div_valid_reg' into 'a_div_valid_reg' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:109]
-INFO: [Synth 8-4471] merging register 'div_resetn_reg' into 'a_div_valid_reg' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:105]
-INFO: [Synth 8-4471] merging register 'adder_resetn_reg' into 'a_adder_valid_reg' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:119]
-WARNING: [Synth 8-6014] Unused sequential element b_div_valid_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:109]
-WARNING: [Synth 8-6014] Unused sequential element div_resetn_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:105]
-WARNING: [Synth 8-6014] Unused sequential element adder_resetn_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:119]
+INFO: [Synth 8-4471] merging register 'b_div_valid_reg' into 'a_div_valid_reg' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:109]
+INFO: [Synth 8-4471] merging register 'div_resetn_reg' into 'a_div_valid_reg' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:105]
+INFO: [Synth 8-4471] merging register 'adder_resetn_reg' into 'a_adder_valid_reg' [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:119]
+WARNING: [Synth 8-6014] Unused sequential element b_div_valid_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element div_resetn_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:105]
+WARNING: [Synth 8-6014] Unused sequential element adder_resetn_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:119]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'quantize'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:143]
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/Controller.vhd:57]
-INFO: [Synth 8-5545] ROM "address" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/Controller.vhd:58]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "bram_write_en" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:143]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:143]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -248,9 +247,9 @@ WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home
              bound_state |                              110 |                              110
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'quantize'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/quantize.vhd:143]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/Controller.vhd:57]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/Controller.vhd:57]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/quantize.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/Controller.vhd:58]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/Controller.vhd:58]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -263,9 +262,9 @@ WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home
           inc_wait_state |                              110 |                              101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'controller'
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/86b4/src/Controller.vhd:57]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ipshared/307a/src/Controller.vhd:58]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1503.395 ; gain = 404.762 ; free physical = 3587 ; free virtual = 13719
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1503.266 ; gain = 404.637 ; free physical = 3237 ; free virtual = 13529
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'U0/controller_inst/quant/divider/U0/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized22) to 'U0/controller_inst/quant/divider/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
 INFO: [Synth 8-223] decloning instance 'U0/controller_inst/quant/divider/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized22) to 'U0/controller_inst/quant/divider/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
@@ -319,7 +318,6 @@ INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_
 INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "FLT_TO_FIX_OP.SPD.OP/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "FLT_TO_FIX_OP.SPD.OP/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "U0/controller_inst/address" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/m_axis_result_tready_adder_reg' (FDE) to 'U0/controller_inst/quant/adder_data_a_reg[24]'
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/adder_data_a_reg[0]' (FDE) to 'U0/controller_inst/quant/adder_data_a_reg[1]'
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/adder_data_a_reg[1]' (FDE) to 'U0/controller_inst/quant/adder_data_a_reg[2]'
@@ -428,36 +426,7 @@ INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_re
 INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[2]) is unused and will be removed from module system_axi_ip_demo_0_0.
 INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[1]) is unused and will be removed from module system_axi_ip_demo_0_0.
 INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg6_reg[0]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[31]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[30]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[29]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[28]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[27]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[26]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[25]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[24]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[23]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[22]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[21]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[20]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[19]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[18]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[17]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[16]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[15]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[14]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[13]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[12]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[11]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[10]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[9]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[8]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[7]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[6]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[5]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[4]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/axi_ip_demo_v1_0_S00_AXI_inst/slv_reg14_reg[3]) is unused and will be removed from module system_axi_ip_demo_0_0.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (U0/controller_inst/quant/adder_data_a_reg[31]) is unused and will be removed from module system_axi_ip_demo_0_0.
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/divider/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/MSB_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/controller_inst/quant/divider/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/divider/U0/i_synth/DIV_OP.SPD.OP/EXP/NORMALIZE_UP_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/controller_inst/quant/divider/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[2].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[1]'
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/divider/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'U0/controller_inst/quant/divider/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]'
@@ -468,6 +437,35 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/contr
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/controller_inst/quant/divider /U0/i_synth/\DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/controller_inst/quant/divider /U0/i_synth/\DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[6] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/controller_inst/quant/divider /U0/i_synth/\DIV_OP.SPD.OP/EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[13].pipe_reg[13][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[14].pipe_reg[14][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[15].pipe_reg[15][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[16].pipe_reg[16][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[17].pipe_reg[17][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[18].pipe_reg[18][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[19].pipe_reg[19][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[20].pipe_reg[20][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[22].pipe_reg[22][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[23].pipe_reg[23][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[24].pipe_reg[24][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[25].pipe_reg[25][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/adder/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/controller_inst/quant/adder/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/adder/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'U0/controller_inst/quant/adder/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/adder/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]' (FDE) to 'U0/controller_inst/quant/adder/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]'
@@ -482,7 +480,7 @@ INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/floattofixed/U0/
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/floattofixed/U0/i_synth/FLT_TO_FIX_OP.SPD.OP/ZERO_DET_DIST_DEL/DEL/i_pipe/opt_has_pipe.first_q_reg[2]' (FDE) to 'U0/controller_inst/quant/floattofixed/U0/i_synth/FLT_TO_FIX_OP.SPD.OP/ALIGN_DIST_DEL/DEL/i_pipe/opt_has_pipe.first_q_reg[2]'
 INFO: [Synth 8-3886] merging instance 'U0/controller_inst/quant/floattofixed/U0/i_synth/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/controller_inst/quant/floattofixed/U0/i_synth/FLT_TO_FIX_OP.SPD.OP/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1511.402 ; gain = 412.770 ; free physical = 3560 ; free virtual = 13695
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1519.281 ; gain = 420.652 ; free physical = 3212 ; free virtual = 13504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -494,13 +492,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1582.402 ; gain = 483.770 ; free physical = 3397 ; free virtual = 13533
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1583.281 ; gain = 484.652 ; free physical = 3057 ; free virtual = 13346
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1583.402 ; gain = 484.770 ; free physical = 3395 ; free virtual = 13531
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1585.281 ; gain = 486.652 ; free physical = 3055 ; free virtual = 13344
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -520,7 +518,7 @@ INFO: [Synth 8-4480] The timing for the instance U0/bram_inst/ram_reg_5 (impleme
 INFO: [Synth 8-4480] The timing for the instance U0/bram_inst/ram_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance U0/bram_inst/ram_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1608.723 ; gain = 510.090 ; free physical = 3392 ; free virtual = 13527
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1610.109 ; gain = 511.480 ; free physical = 3052 ; free virtual = 13341
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -545,7 +543,7 @@ INFO: [Synth 8-5365] Flop ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/merg
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1608.723 ; gain = 510.090 ; free physical = 3391 ; free virtual = 13526
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1610.109 ; gain = 511.480 ; free physical = 3051 ; free virtual = 13339
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -558,7 +556,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1608.723 ; gain = 510.090 ; free physical = 3391 ; free virtual = 13526
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1610.109 ; gain = 511.480 ; free physical = 3051 ; free virtual = 13339
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -570,25 +568,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1608.723 ; gain = 510.090 ; free physical = 3392 ; free virtual = 13528
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1610.109 ; gain = 511.480 ; free physical = 3052 ; free virtual = 13341
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1608.723 ; gain = 510.090 ; free physical = 3392 ; free virtual = 13528
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1610.109 ; gain = 511.480 ; free physical = 3052 ; free virtual = 13341
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1608.723 ; gain = 510.090 ; free physical = 3392 ; free virtual = 13527
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1610.109 ; gain = 511.480 ; free physical = 3052 ; free virtual = 13340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1608.723 ; gain = 510.090 ; free physical = 3392 ; free virtual = 13527
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1610.109 ; gain = 511.480 ; free physical = 3052 ; free virtual = 13340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -604,15 +602,15 @@ Report Cell Usage:
 +------+-----------+------+
 |      |Cell       |Count |
 +------+-----------+------+
-|1     |CARRY4     |    18|
+|1     |CARRY4     |    21|
 |2     |DSP48E1    |     1|
 |3     |DSP48E1_1  |     1|
-|4     |LUT1       |    47|
-|5     |LUT2       |   226|
-|6     |LUT3       |   909|
-|7     |LUT4       |   109|
-|8     |LUT5       |   228|
-|9     |LUT6       |   298|
+|4     |LUT1       |    46|
+|5     |LUT2       |   257|
+|6     |LUT3       |   884|
+|7     |LUT4       |   107|
+|8     |LUT5       |   191|
+|9     |LUT6       |   369|
 |10    |MUXCY      |   754|
 |11    |MUXF7      |    66|
 |12    |MUXF8      |    33|
@@ -628,17 +626,17 @@ Report Cell Usage:
 |22    |SRLC32E    |    21|
 |23    |XORCY      |   732|
 |24    |FDE        |    19|
-|25    |FDRE       |  2998|
+|25    |FDRE       |  3062|
 |26    |FDSE       |    12|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1608.723 ; gain = 510.090 ; free physical = 3392 ; free virtual = 13527
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1610.109 ; gain = 511.480 ; free physical = 3052 ; free virtual = 13340
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 216 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1608.723 ; gain = 274.324 ; free physical = 3471 ; free virtual = 13607
-Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1608.730 ; gain = 510.090 ; free physical = 3471 ; free virtual = 13607
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1610.109 ; gain = 275.840 ; free physical = 3129 ; free virtual = 13417
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1610.117 ; gain = 511.480 ; free physical = 3129 ; free virtual = 13418
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1533 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1536 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -647,12 +645,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   (MUXCY,XORCY) => CARRY4: 218 instances
   FDE => FDRE: 19 instances
 
-268 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+266 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1608.730 ; gain = 522.684 ; free physical = 3449 ; free virtual = 13585
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1610.117 ; gain = 524.074 ; free physical = 3110 ; free virtual = 13398
 INFO: [Common 17-1381] The checkpoint '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.runs/system_axi_ip_demo_0_0_synth_1/system_axi_ip_demo_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.srcs/sources_1/bd/system/ip/system_axi_ip_demo_0_0/system_axi_ip_demo_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 402 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.runs/system_axi_ip_demo_0_0_synth_1/system_axi_ip_demo_0_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1632.734 ; gain = 0.000 ; free physical = 3440 ; free virtual = 13585
-INFO: [Common 17-206] Exiting Vivado at Sun May 27 13:38:28 2018...
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1634.121 ; gain = 0.000 ; free physical = 3099 ; free virtual = 13395
+INFO: [Common 17-206] Exiting Vivado at Sun May 27 14:33:17 2018...

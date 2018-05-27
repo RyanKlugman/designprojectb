@@ -10,6 +10,7 @@ entity controller is
             do_scale : in std_logic;
             amount: in std_logic_vector(31 downto 0);
             scale: in std_logic_vector(31 downto 0);
+            image_width: in std_logic_vector(31 downto 0);
             bram_write_en : out std_logic;
             bram_addr : out std_logic_vector (31 downto 0);
             bram_data_in : out std_logic_vector(31 downto 0);
@@ -77,7 +78,7 @@ begin
                     state <= inc_state;
                 when inc_state =>
                     bram_write_en <= '0';
-                    if (unsigned(address) = 1023) then
+                    if (address = image_width) then
                         state <= done_state;
                     else 
                         address <= std_logic_vector(unsigned(address) + 1);

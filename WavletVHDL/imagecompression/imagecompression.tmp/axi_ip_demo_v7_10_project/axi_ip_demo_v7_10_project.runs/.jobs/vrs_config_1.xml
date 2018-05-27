@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="synth_1" LaunchDir="/home/mitsuaki/unsw/18s1/cs4601/imageCompression/designprojectb/WavletVHDL/imagecompression/imagecompression.tmp/axi_ip_demo_v7_10_project/axi_ip_demo_v7_10_project.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-

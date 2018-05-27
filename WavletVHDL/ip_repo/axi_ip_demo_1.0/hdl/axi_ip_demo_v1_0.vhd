@@ -138,17 +138,18 @@ architecture arch_imp of axi_ip_demo_v1_0 is
     end component;
     
     component Controller is
-         port ( clk : in STD_LOGIC;
-             rst_soft : in std_logic;
-             start_soft : in std_logic;
-             done_soft : out std_logic;
-             do_scale : in std_logic;
-             amount: in std_logic_vector(31 downto 0);
-             scale: in std_logic_vector(31 downto 0);
-             bram_write_en : out std_logic;
-             bram_addr : out std_logic_vector (31 downto 0);
-             bram_data_in : out std_logic_vector(31 downto 0);
-             bram_data_out : in std_logic_vector(31 downto 0)
+         Port ( clk : in STD_LOGIC;
+               rst_soft : in std_logic;
+               start_soft : in std_logic;
+               done_soft : out std_logic;
+               do_scale : in std_logic;
+               amount: in std_logic_vector(31 downto 0);
+               scale: in std_logic_vector(31 downto 0);
+               image_width: in std_logic_vector(31 downto 0);
+               bram_write_en : out std_logic;
+               bram_addr : out std_logic_vector (31 downto 0);
+               bram_data_in : out std_logic_vector(31 downto 0);
+               bram_data_out : in std_logic_vector(31 downto 0)
          );
     end component;
 	
@@ -193,9 +194,10 @@ architecture arch_imp of axi_ip_demo_v1_0 is
     signal do_scale : std_logic := '1';
     signal amount : std_logic_vector(31 downto 0) := X"40800000";
     signal scale : std_logic_vector(31 downto 0) := X"40a00000";
-   
+    signal image_width: std_logic_vector(31 downto 0) := X"00000000";
+    
    signal start_soft : std_logic := '0';
-   signal rst_soft : std_logic := '0';
+   signal restart_soft : std_logic := '0';
 signal axi_rvalid : std_logic;
 begin
 
@@ -285,12 +287,13 @@ axi_ip_demo_v1_0_S00_AXI_inst : axi_ip_demo_v1_0_S00_AXI
     controller_inst : controller
         Port map (
             clk => s00_axi_aclk,
-            rst_soft => rst_soft,
+            rst_soft => restart_soft,
             start_soft => start_soft,
             done_soft => done_soft,
             do_scale => do_scale,
             amount => amount,
             scale => scale,
+            image_width => image_width,
             bram_write_en => ctrl_bram_write_en,
             bram_addr => ctrl_bram_addr,
             bram_data_in => ctrl_bram_data_in,
@@ -325,7 +328,8 @@ axi_ip_demo_v1_0_S00_AXI_inst : axi_ip_demo_v1_0_S00_AXI
       scale <= dataout2;-- X"40e10000";--
       do_scale <= dataout4(0);
       start_soft <= dataout0(0);
-      --rst_soft <= data
+      image_width <= dataout15;
+      restart_soft <= dataout0(1);
 --    bram_we <= '1' when ((s00_axi_awaddr = "011000") AND  (s00_axi_awvalid = '1') AND (s00_axi_wvalid = '1')) else '0';     
     --Write address from Register 7
     --I first write to register 7 the address of where I want to read/write
@@ -355,8 +359,8 @@ axi_ip_demo_v1_0_S00_AXI_inst : axi_ip_demo_v1_0_S00_AXI
         datain11 <= dataout11;
         datain12 <= dataout12;
         datain13 <= dataout13;
-        datain14 <= ctrl_bram_addr;
-        datain15 <= ctrl_bram_data_in;
+        datain14 <= dataout14;
+        datain15 <= dataout15;
 	-- User logic ends
 
 end arch_imp;
