@@ -307,11 +307,17 @@ axi_ip_demo_v1_0_S00_AXI_inst : axi_ip_demo_v1_0_S00_AXI
 
 --when i write data to register 7, it should save to bram.
 --When i read register 6, it sohuld take the bram address from register 1.
-       bram_write_en <= '1' when s00_axi_awaddr = "011100" or ctrl_bram_write_en = '1' else '0';    
+       bram_write_en <= ctrl_bram_write_en when start_soft = '1' else
+                        '1' when s00_axi_awaddr = "011100" else
+                        '0';    
         --7 then 6
-       bram_addr <= datain8 when s00_axi_awaddr = "011100" or s00_axi_araddr = "011000" else ctrl_bram_addr;
+       bram_addr <= ctrl_bram_addr when start_soft = '1' else
+                    datain8 when (s00_axi_awaddr = "011100" or s00_axi_araddr = "011000") else
+                    X"00000000";
         --bram_addr <= ctrl_bram_addr when ctrl_bram_write_en = '1' else datain8;
-       bram_data_in <= s00_axi_wdata  when s00_axi_awaddr = "011100" else ctrl_bram_data_in;
+       bram_data_in <= ctrl_bram_data_in when start_soft = '1' else
+                        s00_axi_wdata  when s00_axi_awaddr = "011100" else
+                        X"00000000";
         --bram_data_in <= s00_axi_wdata  when s00_axi_awaddr = "011100" else ctrl_bram_data_in;
     
         

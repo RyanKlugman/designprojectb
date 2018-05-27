@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date             : Sat May 26 23:07:48 2018
+| Date             : Sun May 27 13:40:37 2018
 | Host             : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 1.745  |
-| Dynamic (W)              | 1.592  |
+| Total On-Chip Power (W)  | 1.744  |
+| Dynamic (W)              | 1.591  |
 | Device Static (W)        | 0.153  |
 | Effective TJA (C/W)      | 11.5   |
 | Max Ambient (C)          | 64.9   |
@@ -50,19 +50,19 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.012 |        3 |       --- |             --- |
-| Slice Logic             |     0.017 |     6631 |       --- |             --- |
-|   LUT as Logic          |     0.013 |     1862 |     53200 |            3.50 |
+| Slice Logic             |     0.016 |     6630 |       --- |             --- |
+|   LUT as Logic          |     0.013 |     1863 |     53200 |            3.50 |
 |   CARRY4                |     0.002 |      246 |     13300 |            1.85 |
 |   Register              |     0.002 |     3389 |    106400 |            3.19 |
-|   LUT as Shift Register |    <0.001 |      110 |     17400 |            0.63 |
+|   LUT as Shift Register |    <0.001 |      108 |     17400 |            0.62 |
 |   F7/F8 Muxes           |    <0.001 |       97 |     53200 |            0.18 |
 |   Others                |     0.000 |      637 |       --- |             --- |
-| Signals                 |     0.016 |     4345 |       --- |             --- |
+| Signals                 |     0.015 |     4345 |       --- |             --- |
 | Block RAM               |     0.017 |        8 |       140 |            5.71 |
 | DSPs                    |     0.001 |        2 |       220 |            0.91 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.153 |          |           |                 |
-| Total                   |     1.745 |          |           |                 |
+| Total                   |     1.744 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.077 |       0.062 |      0.016 |
+| Vccint    |       1.000 |     0.076 |       0.061 |      0.016 |
 | Vccaux    |       1.800 |     0.021 |       0.000 |      0.021 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -148,12 +148,12 @@ Table of Contents
 +------------------------------------------------------------------+-----------+
 | Name                                                             | Power (W) |
 +------------------------------------------------------------------+-----------+
-| system_wrapper                                                   |     1.592 |
-|   system_i                                                       |     1.592 |
-|     axi_ip_demo_0                                                |     0.058 |
-|       U0                                                         |     0.058 |
+| system_wrapper                                                   |     1.591 |
+|   system_i                                                       |     1.591 |
+|     axi_ip_demo_0                                                |     0.056 |
+|       U0                                                         |     0.056 |
 |         axi_ip_demo_v1_0_S00_AXI_inst                            |     0.003 |
-|         bram_inst                                                |     0.018 |
+|         bram_inst                                                |     0.017 |
 |         controller_inst                                          |     0.036 |
 |           quant                                                  |     0.036 |
 |             adder                                                |     0.006 |
@@ -232,7 +232,7 @@ Table of Contents
 |                         merged_sub_mux.STRUCT_ADD                |    <0.001 |
 |                         merged_sub_mux.mux_DELAY                 |    <0.001 |
 |                           i_pipe                                 |    <0.001 |
-|                       DSP48E1_BODY.NORM_RND                      |     0.001 |
+|                       DSP48E1_BODY.NORM_RND                      |     0.002 |
 |                         FULL_USAGE_DSP.LOD                       |    <0.001 |
 |                           DIST_DELAY                             |    <0.001 |
 |                             i_pipe                               |    <0.001 |
@@ -256,9 +256,9 @@ Table of Contents
 |                       OP                                         |    <0.001 |
 |                   i_nd_to_rdy                                    |    <0.001 |
 |                   need_combiner.use_2to1.skid_buffer_combiner    |    <0.001 |
-|             divider                                              |     0.023 |
-|               U0                                                 |     0.023 |
-|                 i_synth                                          |     0.023 |
+|             divider                                              |     0.022 |
+|               U0                                                 |     0.022 |
+|                 i_synth                                          |     0.022 |
 |                   DIV_OP.SPD.OP                                  |     0.021 |
 |                     EXP                                          |    <0.001 |
 |                       COND_DET_A                                 |    <0.001 |
@@ -540,7 +540,7 @@ Table of Contents
 |         auto_pc                                                  |     0.005 |
 |           inst                                                   |     0.005 |
 |             gen_axilite.gen_b2s_conv.axilite_b2s                 |     0.005 |
-|               RD.ar_channel_0                                    |    <0.001 |
+|               RD.ar_channel_0                                    |     0.001 |
 |                 ar_cmd_fsm_0                                     |    <0.001 |
 |                 cmd_translator_0                                 |    <0.001 |
 |                   incr_cmd_0                                     |    <0.001 |
