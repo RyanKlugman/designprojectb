@@ -160,7 +160,7 @@ proc create_root_design { parentCell } {
   # Create ports
 
   # Create instance: axi_ip_demo_0, and set properties
-  set axi_ip_demo_0 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.0 axi_ip_demo_0 ]
+  set axi_ip_demo_0 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:10.1 axi_ip_demo_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]

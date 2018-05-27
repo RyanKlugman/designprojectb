@@ -16,7 +16,7 @@ int main()
 	char fname[20];
 	char fname_c[20];
 	int exit = 0;
-
+	int acceleration = 0;
 	printf("Wavelet Compression Program\n\nMake a choice:");
 	printf("\n1. Compress a file.\n2. Decompress a file.\n3. Exit\n");
 	do
@@ -25,10 +25,10 @@ int main()
 		switch(choice)
 		{
 		case '1':
-			printf("Syntax: [input filename] [output filename] [steps = 1] [quantization = 4]\n=>");
-			scanf("%s %s %d %d", fname, fname_c, &steps, &quant);
+			printf("Syntax: [input filename] [output filename] [acceleration = 0]\n=>");
+			scanf("%s %s %d", fname, fname_c, acceleration);
 			printf("Compressing...\n");
-			Compress(fname, fname_c, steps, quant);
+			Compress(fname, fname_c, steps, quant,acceleration);
 			printf("\nDone.\n\n");
 			break;
 

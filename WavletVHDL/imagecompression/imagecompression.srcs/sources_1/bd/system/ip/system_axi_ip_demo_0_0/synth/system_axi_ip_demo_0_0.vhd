@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: user.org:user:axi_ip_demo:9.0
+-- IP VLNV: user.org:user:axi_ip_demo:10.1
 -- IP Revision: 1
 
 LIBRARY ieee;

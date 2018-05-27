@@ -22,8 +22,9 @@ architecture Behavioral of bram is
     -- 132, 140, 148, 128, 148, 255, 128, 120, 0, 8
     -- expected output in hex:
     -- 84, 8c, 94, 80, 94, ff, 80, 78, 0, 8
-    signal ram : ram_t := (X"41c1999a", X"4256cccd", X"42ca6666", X"408e353f", X"42b56666",
-        X"44244666", X"00000000", X"c204cccd", X"c47a0ccd", X"c4160ccd", others => (others => '0'));
+    --X"41c1999a", X"4256cccd", X"42ca6666", X"408e353f", X"42b56666",
+    -- X"44244666", X"00000000", X"c204cccd", X"c47a0ccd", X"c4160ccd",
+    signal ram : ram_t := ( others => (others => '0'));
     attribute ram_style: string;
     attribute ram_style of ram : signal is "block";
 

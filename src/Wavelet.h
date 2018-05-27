@@ -10,7 +10,7 @@
 #include "Huffman.h"
 
 //Compress a bmp file
-void Compress(char *fname, char *fname_c, int steps = 1, int quant = 16);
+void Compress(char *fname, char *fname_c, int steps = 1, int quant = 4, int acceleration = 0);
 
 //Decompress to a bmp file
 void Decompress(char *fname, char *fname_c);

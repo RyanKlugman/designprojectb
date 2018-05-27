@@ -14,7 +14,7 @@ void Upsample(unsigned char *input, int &img_size, int steps);
 
 //Quantizes the pixel values according to (amount) and scales them so they are all
 //between 0 - 255
-unsigned char *Quantize(float *input, int img_size, int amount, wlt_header_info &wlt);
+unsigned char *Quantize(float *input, int img_size, int amount, wlt_header_info &wlt, int acceleration);
 
 //Rescales the coefficients to their original values after Quantize(...)
 void Rescale(float *input, int img_size, wlt_header_info wlt);

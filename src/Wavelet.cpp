@@ -5,7 +5,7 @@
 //fname_c = name to save the compressed file as
 //steps = the number of downsampling steps, see Operations.h for more info
 //quant = the quantization amount, see Operations.h for more info
-void Compress(char *fname, char *fname_c, int steps, int quant)
+void Compress(char *fname, char *fname_c, int steps, int quant,int acceleration)
 {
 	float *img = NULL;
 	unsigned char *header = NULL;
@@ -27,7 +27,7 @@ void Compress(char *fname, char *fname_c, int steps, int quant)
 
 	wlt_header_info wlt;
 	//quantize (reduce # of colours) and scale coefficients
-	unsigned char *q_img = Quantize(img, sz_img, quant, wlt);
+	unsigned char *q_img = Quantize(img, sz_img, quant, wlt,acceleration);
 	delete[] img;
 
 	//Downsample the resolution of the sub-bands

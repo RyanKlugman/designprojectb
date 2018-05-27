@@ -180,21 +180,32 @@ architecture arch_imp of axi_ip_demo_v1_0 is
 --    signal rst_soft : std_logic := '0';
 --    signal start_soft: std_logic := '0';
     
-    signal done_soft: std_logic := '0';
-        
-    signal bram_write_en : std_logic := '0';
-    signal bram_addr : std_logic_vector(31 downto 0) := (others => '0');
-    signal bram_data_in : std_logic_vector(31 downto 0) := (others => '0');
-    signal bram_data_out : std_logic_vector(31 downto 0) := (others => '0');
+    signal done_soft0: std_logic := '0';
+    signal done_soft1: std_logic := '0';
     
-    signal ctrl_bram_write_en : std_logic := '0';
-    signal ctrl_bram_addr : std_logic_vector(31 downto 0) := (others => '0');
-    signal ctrl_bram_data_in : std_logic_vector(31 downto 0) := (others => '0');
+    signal bram0_write_en : std_logic := '0';
+    signal bram0_addr : std_logic_vector(31 downto 0) := (others => '0');
+    signal bram0_data_in : std_logic_vector(31 downto 0) := (others => '0');
+    signal bram0_data_out : std_logic_vector(31 downto 0) := (others => '0');
+
+    signal bram1_write_en : std_logic := '0';
+    signal bram1_addr : std_logic_vector(31 downto 0) := (others => '0');
+    signal bram1_data_in : std_logic_vector(31 downto 0) := (others => '0');
+    signal bram1_data_out : std_logic_vector(31 downto 0) := (others => '0');   
+    
+    signal ctrl_bram0_write_en : std_logic := '0';
+    signal ctrl_bram0_addr : std_logic_vector(31 downto 0) := (others => '0');
+    signal ctrl_bram0_data_in : std_logic_vector(31 downto 0) := (others => '0');
+
+    signal ctrl_bram1_write_en : std_logic := '0';
+    signal ctrl_bram1_addr : std_logic_vector(31 downto 0) := (others => '0');
+    signal ctrl_bram1_data_in : std_logic_vector(31 downto 0) := (others => '0');
    
     signal do_scale : std_logic := '1';
     signal amount : std_logic_vector(31 downto 0) := X"40800000";
     signal scale : std_logic_vector(31 downto 0) := X"40a00000";
     signal image_width: std_logic_vector(31 downto 0) := X"00000000";
+    signal bram_num: std_logic_vector(31 downto 0) := X"00000000";
     
    signal start_soft : std_logic := '0';
    signal restart_soft : std_logic := '0';
@@ -275,29 +286,53 @@ axi_ip_demo_v1_0_S00_AXI_inst : axi_ip_demo_v1_0_S00_AXI
         latched_raddr => lraddr
 	);
 
-	bram_inst : bram
+	bram_inst_0 : bram
         Port map (
             clk => s00_axi_aclk,
-            write_en => bram_write_en,
-            addr => bram_addr,
-            data_in => bram_data_in,
-            data_out => bram_data_out
+            write_en => bram0_write_en,
+            addr => bram0_addr,
+            data_in => bram0_data_in,
+            data_out => bram0_data_out
         );
-            
-    controller_inst : controller
+        
+   bram_inst_1 : bram
+        Port map (
+            clk => s00_axi_aclk,
+            write_en => bram1_write_en,
+            addr => bram1_addr,
+            data_in => bram1_data_in,
+            data_out => bram1_data_out
+    );              
+    controller_inst_0 : controller
         Port map (
             clk => s00_axi_aclk,
             rst_soft => restart_soft,
             start_soft => start_soft,
-            done_soft => done_soft,
+            done_soft => done_soft0,
             do_scale => do_scale,
             amount => amount,
             scale => scale,
             image_width => image_width,
-            bram_write_en => ctrl_bram_write_en,
-            bram_addr => ctrl_bram_addr,
-            bram_data_in => ctrl_bram_data_in,
-            bram_data_out => bram_data_out
+            bram_write_en => ctrl_bram0_write_en,
+            bram_addr => ctrl_bram0_addr,
+            bram_data_in => ctrl_bram0_data_in,
+            bram_data_out => bram0_data_out
+        );
+            
+   controller_inst_1 : controller
+        Port map (
+            clk => s00_axi_aclk,
+            rst_soft => restart_soft,
+            start_soft => start_soft,
+            done_soft => done_soft1,
+            do_scale => do_scale,
+            amount => amount,
+            scale => scale,
+            image_width => image_width,
+            bram_write_en => ctrl_bram1_write_en,
+            bram_addr => ctrl_bram1_addr,
+            bram_data_in => ctrl_bram1_data_in,
+            bram_data_out => bram1_data_out
         );
                
     --Write data from Register 6
@@ -310,25 +345,38 @@ axi_ip_demo_v1_0_S00_AXI_inst : axi_ip_demo_v1_0_S00_AXI
 
 --when i write data to register 7, it should save to bram.
 --When i read register 6, it sohuld take the bram address from register 1.
-       bram_write_en <= ctrl_bram_write_en when start_soft = '1' else
-                        '1' when s00_axi_awaddr = "011100" else
+       bram0_write_en <= ctrl_bram0_write_en when start_soft = '1' else
+                        '1' when (bram_num = X"00000000" and s00_axi_awaddr = "011100") else
                         '0';    
         --7 then 6
-       bram_addr <= ctrl_bram_addr when start_soft = '1' else
-                    datain8 when (s00_axi_awaddr = "011100" or s00_axi_araddr = "011000") else
+       bram0_addr <= ctrl_bram0_addr when start_soft = '1' else
+                    datain8 when (bram_num = X"00000000" and (s00_axi_awaddr = "011100" or s00_axi_araddr = "011000")) else
                     X"00000000";
         --bram_addr <= ctrl_bram_addr when ctrl_bram_write_en = '1' else datain8;
-       bram_data_in <= ctrl_bram_data_in when start_soft = '1' else
-                        s00_axi_wdata  when s00_axi_awaddr = "011100" else
+       bram0_data_in <= ctrl_bram0_data_in when start_soft = '1' else
+                        s00_axi_wdata when (bram_num = X"00000000" and s00_axi_awaddr = "011100") else
                         X"00000000";
         --bram_data_in <= s00_axi_wdata  when s00_axi_awaddr = "011100" else ctrl_bram_data_in;
-    
+
+       bram1_write_en <= ctrl_bram1_write_en when start_soft = '1' else
+                        '1' when (bram_num = X"00000001" and s00_axi_awaddr = "011100") else
+                        '0';    
+        --7 then 6
+       bram1_addr <= ctrl_bram1_addr when start_soft = '1' else
+                    datain8 when (bram_num = X"00000001" and (s00_axi_awaddr = "011100" or s00_axi_araddr = "011000")) else
+                    X"00000000";
+        --bram_addr <= ctrl_bram_addr when ctrl_bram_write_en = '1' else datain8;
+       bram1_data_in <= ctrl_bram1_data_in when start_soft = '1' else
+                        s00_axi_wdata when (bram_num = X"00000001" and s00_axi_awaddr = "011100") else
+                        X"00000000";    
         
       amount <= dataout1;--X"40800000";--
       scale <= dataout2;-- X"40e10000";--
       do_scale <= dataout4(0);
-      start_soft <= dataout0(0);
+      bram_num <= dataout14;
       image_width <= dataout15;
+      
+      start_soft <= dataout0(0);
       restart_soft <= dataout0(1);
 --    bram_we <= '1' when ((s00_axi_awaddr = "011000") AND  (s00_axi_awvalid = '1') AND (s00_axi_wvalid = '1')) else '0';     
     --Write address from Register 7
@@ -345,10 +393,11 @@ axi_ip_demo_v1_0_S00_AXI_inst : axi_ip_demo_v1_0_S00_AXI
         datain2 <= dataout2;
         datain3 <= dataout3;
         datain4 <= dataout4;
-        datain5 <= "0000000000000000000000000000000" & done_soft;
+        datain5 <= "0000000000000000000000000000000" & (done_soft0 and done_soft1);
         
         --Hold the data out from BRAM at current Addres
-        datain6 <= bram_data_out;
+        datain6 <= bram0_data_out when bram_num = X"00000000" else
+                   bram1_data_out when bram_num = X"00000001";
         --Holds the write data for BRAM
         datain7  <= dataout7;
         --Hold the Address for BRAM
