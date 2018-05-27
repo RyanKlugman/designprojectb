@@ -1,6 +1,326 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sun May 27 22:20:24 2018
+| Host         : DESKTOP-08J8OBJ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_1_1 from user.org:user:axi_ip_demo:9.0 (Rev. 1) to user.org:user:axi_ip_demo:9.1 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sun May 27 22:20:24 2018
+| Host         : DESKTOP-08J8OBJ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:9.0 (Rev. 1) to user.org:user:axi_ip_demo:9.1 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun May 27 14:31:08 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:8.0 (Rev. 1) to user.org:user:axi_ip_demo:9.0 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun May 27 13:36:57 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:7.10 (Rev. 1) to user.org:user:axi_ip_demo:8.0 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat May 26 23:03:59 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:7.9 (Rev. 1) to user.org:user:axi_ip_demo:7.10 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat May 26 22:39:41 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:7.8 (Rev. 1) to user.org:user:axi_ip_demo:7.9 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat May 26 18:46:41 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:7.7 (Rev. 1) to user.org:user:axi_ip_demo:7.8 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat May 26 18:05:04 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:7.6 (Rev. 1) to user.org:user:axi_ip_demo:7.7 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat May 26 17:51:36 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:7.5 (Rev. 1) to user.org:user:axi_ip_demo:7.6 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat May 26 17:42:38 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:7.0 (Rev. 1) to user.org:user:axi_ip_demo:7.5 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat May 26 16:14:07 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:6.7 (Rev. 1) to user.org:user:axi_ip_demo:7.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_axi_ip_demo_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'rst_soft'
+
+-Upgrade has removed port 'start_soft'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat May 26 14:31:04 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:6.6 (Rev. 1) to user.org:user:axi_ip_demo:6.7 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat May 26 14:05:17 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:6.2 (Rev. 1) to user.org:user:axi_ip_demo:6.6 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat May 26 13:46:15 2018
+| Host         : mitsuaki-X550LD running 64-bit Ubuntu 16.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ip_demo_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_axi_ip_demo_0_0 from user.org:user:axi_ip_demo:6.1 (Rev. 4) to user.org:user:axi_ip_demo:6.2 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_axi_ip_demo_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'rst_soft'
+
+-Upgrade has added port 'start_soft'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
 | Date         : Sat May 26 09:28:13 2018
 | Host         : RYAN-HP running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

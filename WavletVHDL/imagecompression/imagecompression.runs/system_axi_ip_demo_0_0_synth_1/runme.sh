@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Ryan/Desktop/WavletVHDL/imagecompression/imagecompression.runs/system_axi_ip_demo_0_0_synth_1'
+HD_PWD='C:/Users/Kevin/Documents/COMP4601/WavletVHDL/imagecompression/imagecompression.runs/system_axi_ip_demo_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

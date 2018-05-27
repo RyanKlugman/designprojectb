@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1527290953">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1527429189">
   <File Type="RDS-PROPCONSTRS" Name="system_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="system_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="system_wrapper.vds"/>
@@ -40,6 +40,10 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_ip_demo_3_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_ip_demo_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_ip_demo_1_1"/>
   <BlockFileSet Type="BlockSrcs" Name="system_axi_ip_demo_0_0"/>
 </GenRun>

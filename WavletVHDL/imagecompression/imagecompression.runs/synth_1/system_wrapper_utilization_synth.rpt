@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Sat May 26 09:33:19 2018
-| Host         : RYAN-HP running 64-bit major release  (build 9200)
+| Date         : Sun May 27 23:56:25 2018
+| Host         : DESKTOP-08J8OBJ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
 | Device       : 7z020clg484-1
@@ -173,8 +173,24 @@ Table of Contents
 +-------------------------------+------+
 |            Ref Name           | Used |
 +-------------------------------+------+
+| system_xbar_0                 |    1 |
 | system_rst_ps7_0_100M_0       |    1 |
 | system_processing_system7_0_0 |    1 |
+| system_axi_ip_demo_9_0        |    1 |
+| system_axi_ip_demo_8_0        |    1 |
+| system_axi_ip_demo_7_0        |    1 |
+| system_axi_ip_demo_6_0        |    1 |
+| system_axi_ip_demo_5_0        |    1 |
+| system_axi_ip_demo_4_0        |    1 |
+| system_axi_ip_demo_3_0        |    1 |
+| system_axi_ip_demo_2_0        |    1 |
+| system_axi_ip_demo_1_1        |    1 |
+| system_axi_ip_demo_15_0       |    1 |
+| system_axi_ip_demo_14_0       |    1 |
+| system_axi_ip_demo_13_0       |    1 |
+| system_axi_ip_demo_12_0       |    1 |
+| system_axi_ip_demo_11_0       |    1 |
+| system_axi_ip_demo_10_0       |    1 |
 | system_axi_ip_demo_0_0        |    1 |
 | system_auto_pc_0              |    1 |
 +-------------------------------+------+
