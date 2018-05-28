@@ -160,52 +160,7 @@ proc create_root_design { parentCell } {
   # Create ports
 
   # Create instance: axi_ip_demo_0, and set properties
-  set axi_ip_demo_0 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_0 ]
-
-  # Create instance: axi_ip_demo_1, and set properties
-  set axi_ip_demo_1 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_1 ]
-
-  # Create instance: axi_ip_demo_2, and set properties
-  set axi_ip_demo_2 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_2 ]
-
-  # Create instance: axi_ip_demo_3, and set properties
-  set axi_ip_demo_3 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_3 ]
-
-  # Create instance: axi_ip_demo_4, and set properties
-  set axi_ip_demo_4 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_4 ]
-
-  # Create instance: axi_ip_demo_5, and set properties
-  set axi_ip_demo_5 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_5 ]
-
-  # Create instance: axi_ip_demo_6, and set properties
-  set axi_ip_demo_6 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_6 ]
-
-  # Create instance: axi_ip_demo_7, and set properties
-  set axi_ip_demo_7 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_7 ]
-
-  # Create instance: axi_ip_demo_8, and set properties
-  set axi_ip_demo_8 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_8 ]
-
-  # Create instance: axi_ip_demo_9, and set properties
-  set axi_ip_demo_9 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_9 ]
-
-  # Create instance: axi_ip_demo_10, and set properties
-  set axi_ip_demo_10 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_10 ]
-
-  # Create instance: axi_ip_demo_11, and set properties
-  set axi_ip_demo_11 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_11 ]
-
-  # Create instance: axi_ip_demo_12, and set properties
-  set axi_ip_demo_12 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_12 ]
-
-  # Create instance: axi_ip_demo_13, and set properties
-  set axi_ip_demo_13 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_13 ]
-
-  # Create instance: axi_ip_demo_14, and set properties
-  set axi_ip_demo_14 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_14 ]
-
-  # Create instance: axi_ip_demo_15, and set properties
-  set axi_ip_demo_15 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.1 axi_ip_demo_15 ]
+  set axi_ip_demo_0 [ create_bd_cell -type ip -vlnv user.org:user:axi_ip_demo:9.0 axi_ip_demo_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
@@ -218,7 +173,7 @@ CONFIG.preset {ZedBoard} \
   # Create instance: ps7_0_axi_periph, and set properties
   set ps7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_0_axi_periph ]
   set_property -dict [ list \
-CONFIG.NUM_MI {16} \
+CONFIG.NUM_MI {1} \
  ] $ps7_0_axi_periph
 
   # Create instance: rst_ps7_0_100M, and set properties
@@ -229,45 +184,15 @@ CONFIG.NUM_MI {16} \
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph/S00_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins axi_ip_demo_0/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins axi_ip_demo_1/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins axi_ip_demo_2/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M03_AXI [get_bd_intf_pins axi_ip_demo_3/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M03_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M04_AXI [get_bd_intf_pins axi_ip_demo_4/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M04_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M05_AXI [get_bd_intf_pins axi_ip_demo_5/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M05_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M06_AXI [get_bd_intf_pins axi_ip_demo_6/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M06_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M07_AXI [get_bd_intf_pins axi_ip_demo_7/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M07_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M08_AXI [get_bd_intf_pins axi_ip_demo_8/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M08_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M09_AXI [get_bd_intf_pins axi_ip_demo_9/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M09_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M10_AXI [get_bd_intf_pins axi_ip_demo_10/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M10_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M11_AXI [get_bd_intf_pins axi_ip_demo_11/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M11_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M12_AXI [get_bd_intf_pins axi_ip_demo_12/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M12_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M13_AXI [get_bd_intf_pins axi_ip_demo_13/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M13_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M14_AXI [get_bd_intf_pins axi_ip_demo_14/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M14_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M15_AXI [get_bd_intf_pins axi_ip_demo_15/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M15_AXI]
 
   # Create port connections
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_ip_demo_0/s00_axi_aclk] [get_bd_pins axi_ip_demo_1/s00_axi_aclk] [get_bd_pins axi_ip_demo_10/s00_axi_aclk] [get_bd_pins axi_ip_demo_11/s00_axi_aclk] [get_bd_pins axi_ip_demo_12/s00_axi_aclk] [get_bd_pins axi_ip_demo_13/s00_axi_aclk] [get_bd_pins axi_ip_demo_14/s00_axi_aclk] [get_bd_pins axi_ip_demo_15/s00_axi_aclk] [get_bd_pins axi_ip_demo_2/s00_axi_aclk] [get_bd_pins axi_ip_demo_3/s00_axi_aclk] [get_bd_pins axi_ip_demo_4/s00_axi_aclk] [get_bd_pins axi_ip_demo_5/s00_axi_aclk] [get_bd_pins axi_ip_demo_6/s00_axi_aclk] [get_bd_pins axi_ip_demo_7/s00_axi_aclk] [get_bd_pins axi_ip_demo_8/s00_axi_aclk] [get_bd_pins axi_ip_demo_9/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins ps7_0_axi_periph/M07_ACLK] [get_bd_pins ps7_0_axi_periph/M08_ACLK] [get_bd_pins ps7_0_axi_periph/M09_ACLK] [get_bd_pins ps7_0_axi_periph/M10_ACLK] [get_bd_pins ps7_0_axi_periph/M11_ACLK] [get_bd_pins ps7_0_axi_periph/M12_ACLK] [get_bd_pins ps7_0_axi_periph/M13_ACLK] [get_bd_pins ps7_0_axi_periph/M14_ACLK] [get_bd_pins ps7_0_axi_periph/M15_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_ip_demo_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_100M_interconnect_aresetn [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins rst_ps7_0_100M/interconnect_aresetn]
-  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_ip_demo_0/s00_axi_aresetn] [get_bd_pins axi_ip_demo_1/s00_axi_aresetn] [get_bd_pins axi_ip_demo_10/s00_axi_aresetn] [get_bd_pins axi_ip_demo_11/s00_axi_aresetn] [get_bd_pins axi_ip_demo_12/s00_axi_aresetn] [get_bd_pins axi_ip_demo_13/s00_axi_aresetn] [get_bd_pins axi_ip_demo_14/s00_axi_aresetn] [get_bd_pins axi_ip_demo_15/s00_axi_aresetn] [get_bd_pins axi_ip_demo_2/s00_axi_aresetn] [get_bd_pins axi_ip_demo_3/s00_axi_aresetn] [get_bd_pins axi_ip_demo_4/s00_axi_aresetn] [get_bd_pins axi_ip_demo_5/s00_axi_aresetn] [get_bd_pins axi_ip_demo_6/s00_axi_aresetn] [get_bd_pins axi_ip_demo_7/s00_axi_aresetn] [get_bd_pins axi_ip_demo_8/s00_axi_aresetn] [get_bd_pins axi_ip_demo_9/s00_axi_aresetn] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/M05_ARESETN] [get_bd_pins ps7_0_axi_periph/M06_ARESETN] [get_bd_pins ps7_0_axi_periph/M07_ARESETN] [get_bd_pins ps7_0_axi_periph/M08_ARESETN] [get_bd_pins ps7_0_axi_periph/M09_ARESETN] [get_bd_pins ps7_0_axi_periph/M10_ARESETN] [get_bd_pins ps7_0_axi_periph/M11_ARESETN] [get_bd_pins ps7_0_axi_periph/M12_ARESETN] [get_bd_pins ps7_0_axi_periph/M13_ARESETN] [get_bd_pins ps7_0_axi_periph/M14_ARESETN] [get_bd_pins ps7_0_axi_periph/M15_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_ip_demo_0/s00_axi_aresetn] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_0/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_0_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43CA0000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_10/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_10_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43CB0000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_11/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_11_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43CC0000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_12/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_12_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43CD0000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_13/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_13_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43CE0000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_14/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_14_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43CF0000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_15/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_15_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C10000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_1/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_1_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C20000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_2/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_2_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C30000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_3/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_3_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C40000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_4/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_4_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C50000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_5/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_5_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C60000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_6/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_6_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C70000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_7/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_7_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C80000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_8/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_8_S00_AXI_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C90000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_ip_demo_9/S00_AXI/S00_AXI_reg] SEG_axi_ip_demo_9_S00_AXI_reg
 
 
   # Restore current instance

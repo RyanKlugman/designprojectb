@@ -16,54 +16,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_ps7_0_ax
 # IP: bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_rst_ps7_0_100M_0 || ORIG_REF_NAME==system_rst_ps7_0_100M_0}]
 
-# IP: bd/system/ip/system_xbar_0/system_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_0 || ORIG_REF_NAME==system_xbar_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_1_1/system_axi_ip_demo_1_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_1_1 || ORIG_REF_NAME==system_axi_ip_demo_1_1}]
-
-# IP: bd/system/ip/system_axi_ip_demo_2_0/system_axi_ip_demo_2_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_2_0 || ORIG_REF_NAME==system_axi_ip_demo_2_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_3_0/system_axi_ip_demo_3_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_3_0 || ORIG_REF_NAME==system_axi_ip_demo_3_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_4_0/system_axi_ip_demo_4_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_4_0 || ORIG_REF_NAME==system_axi_ip_demo_4_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_5_0/system_axi_ip_demo_5_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_5_0 || ORIG_REF_NAME==system_axi_ip_demo_5_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_6_0/system_axi_ip_demo_6_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_6_0 || ORIG_REF_NAME==system_axi_ip_demo_6_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_7_0/system_axi_ip_demo_7_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_7_0 || ORIG_REF_NAME==system_axi_ip_demo_7_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_8_0/system_axi_ip_demo_8_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_8_0 || ORIG_REF_NAME==system_axi_ip_demo_8_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_9_0/system_axi_ip_demo_9_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_9_0 || ORIG_REF_NAME==system_axi_ip_demo_9_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_10_0/system_axi_ip_demo_10_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_10_0 || ORIG_REF_NAME==system_axi_ip_demo_10_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_11_0/system_axi_ip_demo_11_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_11_0 || ORIG_REF_NAME==system_axi_ip_demo_11_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_12_0/system_axi_ip_demo_12_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_12_0 || ORIG_REF_NAME==system_axi_ip_demo_12_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_13_0/system_axi_ip_demo_13_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_13_0 || ORIG_REF_NAME==system_axi_ip_demo_13_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_14_0/system_axi_ip_demo_14_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_14_0 || ORIG_REF_NAME==system_axi_ip_demo_14_0}]
-
-# IP: bd/system/ip/system_axi_ip_demo_15_0/system_axi_ip_demo_15_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_ip_demo_15_0 || ORIG_REF_NAME==system_axi_ip_demo_15_0}]
-
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0}]
 

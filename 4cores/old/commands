@@ -1,0 +1,6 @@
+//compile with this
+g++ -std=c++0x *.cpp
+
+//program fpga with this
+
+cat bit.bit > /dev/xdevcfg
