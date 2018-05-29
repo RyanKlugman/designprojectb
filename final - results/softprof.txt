@@ -1,0 +1,13 @@
+software
+
+Lenna:
+		Actual Software Duration : 0.180000
+		
+512:
+		Actual Software Duration : 0.180000
+		
+1024:
+		Actual Software Duration : 0.720000
+	
+2048:
+		Actual Software Duration : 2.870000

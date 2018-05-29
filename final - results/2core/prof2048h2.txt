@@ -1,0 +1,238 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 43.01     14.26    14.26        1    14.26    15.22  Quantize(float*, int, int, wlt_header_info&, int)
+ 23.62     22.09     7.83    23040     0.00     0.00  Step97(float*, int)
+ 14.39     26.86     4.77        3     1.59     4.20  TransformStream(float*, int)
+  4.43     28.33     1.47        1     1.47     1.47  HuffEncode(unsigned char*, int, wlt_header_info&)
+  3.14     29.38     1.04        1     1.04    13.64  Transform97(float*, int)
+  3.02     30.38     1.00        1     1.00     1.00  ToYUV(float*, int)
+  2.81     31.31     0.93        1     0.93     0.93  Downsample(unsigned char*, int&, int)
+  2.59     32.17     0.86        1     0.86     0.86  LoadBMP(char*, unsigned char*&, int&, float*&, int&)
+  1.96     32.82     0.65 12582912     0.00     0.00  writeToBRAM(int, float, unsigned int*)
+  0.94     33.13     0.31 12582912     0.00     0.00  readFromIntBRAM(int, unsigned int*)
+  0.12     33.17     0.04                             readFromBRAM(int, unsigned int*)
+  0.00     33.17     0.00        4     0.00     0.00  writeToRegister(int, float, unsigned int*)
+  0.00     33.17     0.00        2     0.00     0.00  wlt_header_info::~wlt_header_info()
+  0.00     33.17     0.00        2     0.00     0.00  std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+  0.00     33.17     0.00        1     0.00     0.00  SaveWLT(char*, wlt_header_info, unsigned char*, int, unsigned char*, int)
+  0.00     33.17     0.00        1     0.00    33.13  Compress(char*, char*, int, int, int)
+  0.00     33.17     0.00        1     0.00     0.00  wlt_header_info::wlt_header_info(wlt_header_info const&)
+  0.00     33.17     0.00        1     0.00     0.00  wlt_header_info::wlt_header_info()
+  0.00     33.17     0.00        1     0.00     0.00  std::fpos<__mbstate_t>::operator long long() const
+  0.00     33.17     0.00        1     0.00     0.00  std::fpos<__mbstate_t>::fpos(long long)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.03% of 33.17 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.9    0.00   33.13                 main [1]
+                0.00   33.13       1/1           Compress(char*, char*, int, int, int) [2]
+-----------------------------------------------
+                0.00   33.13       1/1           main [1]
+[2]     99.9    0.00   33.13       1         Compress(char*, char*, int, int, int) [2]
+               14.26    0.96       1/1           Quantize(float*, int, int, wlt_header_info&, int) [3]
+                1.04   12.60       1/1           Transform97(float*, int) [4]
+                1.47    0.00       1/1           HuffEncode(unsigned char*, int, wlt_header_info&) [7]
+                1.00    0.00       1/1           ToYUV(float*, int) [8]
+                0.93    0.00       1/1           Downsample(unsigned char*, int&, int) [9]
+                0.86    0.00       1/1           LoadBMP(char*, unsigned char*&, int&, float*&, int&) [10]
+                0.00    0.00       2/2           wlt_header_info::~wlt_header_info() [19]
+                0.00    0.00       1/1           wlt_header_info::wlt_header_info() [23]
+                0.00    0.00       1/1           wlt_header_info::wlt_header_info(wlt_header_info const&) [22]
+                0.00    0.00       1/1           SaveWLT(char*, wlt_header_info, unsigned char*, int, unsigned char*, int) [21]
+-----------------------------------------------
+               14.26    0.96       1/1           Compress(char*, char*, int, int, int) [2]
+[3]     45.9   14.26    0.96       1         Quantize(float*, int, int, wlt_header_info&, int) [3]
+                0.65    0.00 12582912/12582912     writeToBRAM(int, float, unsigned int*) [11]
+                0.31    0.00 12582912/12582912     readFromIntBRAM(int, unsigned int*) [12]
+                0.00    0.00       4/4           writeToRegister(int, float, unsigned int*) [18]
+-----------------------------------------------
+                1.04   12.60       1/1           Compress(char*, char*, int, int, int) [2]
+[4]     41.1    1.04   12.60       1         Transform97(float*, int) [4]
+                4.77    7.83       3/3           TransformStream(float*, int) [5]
+-----------------------------------------------
+                                  12             TransformStream(float*, int) [5]
+                4.77    7.83       3/3           Transform97(float*, int) [4]
+[5]     38.0    4.77    7.83       3+12      TransformStream(float*, int) [5]
+                7.83    0.00   23040/23040       Step97(float*, int) [6]
+                                  12             TransformStream(float*, int) [5]
+-----------------------------------------------
+                7.83    0.00   23040/23040       TransformStream(float*, int) [5]
+[6]     23.6    7.83    0.00   23040         Step97(float*, int) [6]
+-----------------------------------------------
+                1.47    0.00       1/1           Compress(char*, char*, int, int, int) [2]
+[7]      4.4    1.47    0.00       1         HuffEncode(unsigned char*, int, wlt_header_info&) [7]
+-----------------------------------------------
+                1.00    0.00       1/1           Compress(char*, char*, int, int, int) [2]
+[8]      3.0    1.00    0.00       1         ToYUV(float*, int) [8]
+-----------------------------------------------
+                0.93    0.00       1/1           Compress(char*, char*, int, int, int) [2]
+[9]      2.8    0.93    0.00       1         Downsample(unsigned char*, int&, int) [9]
+-----------------------------------------------
+                0.86    0.00       1/1           Compress(char*, char*, int, int, int) [2]
+[10]     2.6    0.86    0.00       1         LoadBMP(char*, unsigned char*&, int&, float*&, int&) [10]
+                0.00    0.00       1/2           std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [20]
+                0.00    0.00       1/1           std::fpos<__mbstate_t>::operator long long() const [24]
+                0.00    0.00       1/1           std::fpos<__mbstate_t>::fpos(long long) [25]
+-----------------------------------------------
+                0.65    0.00 12582912/12582912     Quantize(float*, int, int, wlt_header_info&, int) [3]
+[11]     2.0    0.65    0.00 12582912         writeToBRAM(int, float, unsigned int*) [11]
+-----------------------------------------------
+                0.31    0.00 12582912/12582912     Quantize(float*, int, int, wlt_header_info&, int) [3]
+[12]     0.9    0.31    0.00 12582912         readFromIntBRAM(int, unsigned int*) [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     0.1    0.04    0.00                 readFromBRAM(int, unsigned int*) [13]
+-----------------------------------------------
+                0.00    0.00       4/4           Quantize(float*, int, int, wlt_header_info&, int) [3]
+[18]     0.0    0.00    0.00       4         writeToRegister(int, float, unsigned int*) [18]
+-----------------------------------------------
+                0.00    0.00       2/2           Compress(char*, char*, int, int, int) [2]
+[19]     0.0    0.00    0.00       2         wlt_header_info::~wlt_header_info() [19]
+-----------------------------------------------
+                0.00    0.00       1/2           LoadBMP(char*, unsigned char*&, int&, float*&, int&) [10]
+                0.00    0.00       1/2           SaveWLT(char*, wlt_header_info, unsigned char*, int, unsigned char*, int) [21]
+[20]     0.0    0.00    0.00       2         std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [20]
+-----------------------------------------------
+                0.00    0.00       1/1           Compress(char*, char*, int, int, int) [2]
+[21]     0.0    0.00    0.00       1         SaveWLT(char*, wlt_header_info, unsigned char*, int, unsigned char*, int) [21]
+                0.00    0.00       1/2           std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [20]
+-----------------------------------------------
+                0.00    0.00       1/1           Compress(char*, char*, int, int, int) [2]
+[22]     0.0    0.00    0.00       1         wlt_header_info::wlt_header_info(wlt_header_info const&) [22]
+-----------------------------------------------
+                0.00    0.00       1/1           Compress(char*, char*, int, int, int) [2]
+[23]     0.0    0.00    0.00       1         wlt_header_info::wlt_header_info() [23]
+-----------------------------------------------
+                0.00    0.00       1/1           LoadBMP(char*, unsigned char*&, int&, float*&, int&) [10]
+[24]     0.0    0.00    0.00       1         std::fpos<__mbstate_t>::operator long long() const [24]
+-----------------------------------------------
+                0.00    0.00       1/1           LoadBMP(char*, unsigned char*&, int&, float*&, int&) [10]
+[25]     0.0    0.00    0.00       1         std::fpos<__mbstate_t>::fpos(long long) [25]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+   [9] Downsample(unsigned char*, int&, int) [18] writeToRegister(int, float, unsigned int*) [22] wlt_header_info::wlt_header_info(wlt_header_info const&)
+   [7] HuffEncode(unsigned char*, int, wlt_header_info&) [8] ToYUV(float*, int) [23] wlt_header_info::wlt_header_info()
+   [4] Transform97(float*, int) [6] Step97(float*, int)   [19] wlt_header_info::~wlt_header_info()
+  [11] writeToBRAM(int, float, unsigned int*) [10] LoadBMP(char*, unsigned char*&, int&, float*&, int&) [24] std::fpos<__mbstate_t>::operator long long() const
+  [13] readFromBRAM(int, unsigned int*) [21] SaveWLT(char*, wlt_header_info, unsigned char*, int, unsigned char*, int) [25] std::fpos<__mbstate_t>::fpos(long long)
+   [5] TransformStream(float*, int) [2] Compress(char*, char*, int, int, int) [20] std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+  [12] readFromIntBRAM(int, unsigned int*) [3] Quantize(float*, int, int, wlt_header_info&, int)

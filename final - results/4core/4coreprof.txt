@@ -1,0 +1,25 @@
+4core
+
+Lenna:
+	Hardware:
+		BRAM Write Duration : 0.490000
+		BRAM Read Duration : 0.500000
+		Actual Hardware Duration : 0.120000
+	
+512:
+	Hardware:
+		BRAM Write Duration : 0.520000
+		BRAM Read Duration : 0.460000
+		Actual Hardware Duration : 0.130000
+	
+1024:
+	Hardware:
+		BRAM Write Duration : 2.010000
+		BRAM Read Duration : 1.880000
+		Actual Hardware Duration : 0.530000
+	
+2048:
+	Hardware:
+		BRAM Write Duration : 8.100000
+		BRAM Read Duration : 7.450000
+		Actual Hardware Duration : 2.150000
